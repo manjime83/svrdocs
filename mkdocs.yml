@@ -1,9 +1,0 @@
-site_name: Sandra Vargas Realtor
-nav:
-  - "Inicio": "index.md"
-  - "Guía de Inicio": "onboarding.md"
-  - "Procesos de Venta": "ventas.md"
-  - "Procesos de Alquiler": "alquiler.md"
-  - "Marketing": "marketing.md"
-  - "Herramientas": "herramientas.md"
-locale: es
