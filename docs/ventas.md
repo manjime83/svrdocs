@@ -2,10 +2,6 @@
 
 Aquí se documenta el flujo de trabajo para la venta de propiedades.
 
-## Validación para Clientes Nuevos
-
-Al momento de hacer una transacción, si el cliente recientemente abrió su cuenta, se deben validar los límites de la misma.
-
 ## Proceso Post-Contrato: Guía Detallada
 
 Una vez que una propiedad está bajo contrato, comienza un período crítico de 20 días que requiere una gestión meticulosa para asegurar un cierre exitoso y proteger la comisión del cliente. A continuación se detalla el flujo de trabajo.
@@ -37,7 +33,7 @@ Si el cliente es extranjero y la propiedad es una inversión, es común cerrar l
 ### 4. Creación de Cuenta Bancaria y Límites de Transacción
 
 - **Apertura de Cuenta:** Una vez constituida la LLC, el cliente necesita una cuenta bancaria a nombre de la empresa. Se pueden sugerir opciones de bancos online si el cliente no puede viajar.
-- **¡MUY IMPORTANTE! Aumentar Límites:** Aconseja al cliente que contacte a su banco para **ampliar los límites de su cuenta** y evitar problemas el día del cierre. Pueden enviar una copia del contrato al banco como justificación.
+- **¡MUY IMPORTANTE! Validar y Aumentar Límites:** Aconseja al cliente que contacte a su banco para **ampliar los límites de su cuenta** y evitar problemas el día del cierre. Esto es especialmente crítico si la cuenta fue abierta recientemente. Pueden enviar una copia del contrato al banco como justificación.
 
 ### 5. Coordinación con el Prestamista (Lender)
 
