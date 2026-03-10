@@ -35,6 +35,13 @@ nav:
   - Inicio: index.md
   - Procesos de Alquiler: procesos-de-alquiler.md
   - Herramientas y Software: herramientas.md
+  - Bots y Automatizaciones:
+      - Vista General: bots/index.md
+      - Laura:
+          - Resumen: bots/laura-local/index.md
+          - Personalidad y Estilo: bots/laura-local/personality.md
+          - Objetivo y Flujo: bots/laura-local/objetivo-y-flujo.md
+          - Reglas Operativas: bots/laura-local/reglas-y-operacion.md
   - Estrategias de Marketing: marketing.md
   - Guía de Inicio: onboarding.md
   - Procesos de Venta: ventas.md
