@@ -1,0 +1,40 @@
+site_name: Sandra Vargas Realtor Docs
+site_description: Procesos, guias y recursos internos para Sandra Vargas Realtor.
+docs_dir: docs
+site_url: !ENV [SITE_URL, ""]
+
+theme:
+  name: material
+  language: es
+  features:
+    - navigation.instant
+    - navigation.expand
+    - navigation.sections
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+  palette:
+    - scheme: default
+      primary: teal
+      accent: amber
+
+plugins:
+  - search
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - footnotes
+  - md_in_html
+  - tables
+  - toc:
+      permalink: true
+
+nav:
+  - Inicio: index.md
+  - Procesos de Alquiler: procesos-de-alquiler.md
+  - Herramientas y Software: herramientas.md
+  - Estrategias de Marketing: marketing.md
+  - Guía de Inicio: onboarding.md
+  - Procesos de Venta: ventas.md

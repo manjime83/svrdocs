@@ -1,9 +1,40 @@
----
-description: Hello World
----
+# Sandra Vargas Realtor Docs
 
-# Procesos de Alquiler
+This repository is now configured as an `MkDocs` site using the `Material for MkDocs` theme.
 
-Aquí se documenta el flujo de trabajo para el alquiler de propiedades.
+## Local development
 
-[![GitBook](https://img.shields.io/static/v1?message=Documented%20on%20GitBook&logo=gitbook&logoColor=ffffff&label=%20&labelColor=5c5c5c&color=3F89A1)](https://www.gitbook.com/preview?utm_source=gitbook_readme_badge&utm_medium=organic&utm_campaign=preview_documentation&utm_content=link)
+1. Create and activate a virtual environment.
+2. Install dependencies:
+
+```bash
+pip install -r requirements.txt
+```
+
+3. Start the local docs server:
+
+```bash
+mkdocs serve
+```
+
+The site will be available at `http://127.0.0.1:8000`.
+
+## Build
+
+```bash
+mkdocs build --strict
+```
+
+The generated site is written to `site/`.
+
+## GitHub Pages deployment
+
+The repository includes a GitHub Actions workflow at `.github/workflows/deploy-docs.yml`.
+
+To publish successfully:
+
+1. Push to the `main` branch.
+2. In GitHub, open `Settings > Pages`.
+3. Set the source to `GitHub Actions`.
+
+After that, each push to `main` will build and deploy the documentation site automatically.
