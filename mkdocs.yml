@@ -38,10 +38,10 @@ nav:
   - Bots y Automatizaciones:
       - Vista General: bots/index.md
       - Laura:
-          - Resumen: bots/laura-local/index.md
-          - Personalidad y Estilo: bots/laura-local/personality.md
-          - Objetivo y Flujo: bots/laura-local/objetivo-y-flujo.md
-          - Reglas Operativas: bots/laura-local/reglas-y-operacion.md
+          - Resumen: bots/laura/index.md
+          - Personalidad y Estilo: bots/laura/personality.md
+          - Objetivo y Flujo: bots/laura/objetivo-y-flujo.md
+          - Reglas Operativas: bots/laura/reglas-y-operacion.md
   - Estrategias de Marketing: marketing.md
   - Guía de Inicio: onboarding.md
   - Procesos de Venta: ventas.md
