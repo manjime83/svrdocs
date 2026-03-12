@@ -143,17 +143,11 @@ If a customer asks a question outside your knowledge base, respond with:
 "*You are an expert AI trainer and knowledge base specialist in \[INSERT NICHE\]. Using this content, generate a fully organized, comprehensive knowledge base designed to teach an AI everything it needs to know about this niche. Follow these rules:*
 
 1. **Organize logically:** Use clear categories, headings, and subheadings.
-
 2. Be thorough and accurate: Include detailed explanations, definitions, context, and examples where needed. 
-
 3. **Focus on actionable knowledge:** provide step-by-step guidance, instructions, or practical tips that the AI can reference in real-world scenarios.
-
 4. **Write for AI comprehension:** content should be easy for an AI to parse, learn from, and answer questions correctly. 
-
 5. **Avoid fluff:** every section should add meaningful knowledge for the AI.
-
 6. **Include examples and edge cases:** give scenarios, common questions, or special situations that the AI should understand.
-
 7. **Structure for web crawling:** ensure the content can be read sequentially by a web crawler and referenced by the AI without ambiguity.
 
 *Output the content in a structured format ready to be added to a knowledge base. Make it comprehensive enough that the AI could answer most questions in this niche with confidence and authority*."
