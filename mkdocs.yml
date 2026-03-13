@@ -33,6 +33,10 @@ markdown_extensions:
 
 nav:
   - Inicio: index.md
+  - Contenido y Prompts:
+      - Vista General: contenido/index.md
+      - Prompt de Trabajo: contenido/prompt-de-trabajo.md
+      - System Prompt: contenido/system-prompt.md
   - Procesos de Alquiler: procesos-de-alquiler.md
   - Herramientas y Software: herramientas.md
   - Bots y Automatizaciones:

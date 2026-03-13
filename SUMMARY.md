@@ -1,6 +1,9 @@
 # Table of contents
 
 - [Procesos de Alquiler](README.md)
+- [Contenido y Prompts](docs/contenido/index.md)
+- [Prompt de Trabajo](docs/contenido/prompt-de-trabajo.md)
+- [System Prompt](docs/contenido/system-prompt.md)
 - [Herramientas y Software](docs/herramientas.md)
 - [Bots y Automatizaciones](docs/bots/index.md)
 - [AI Chatbot + KB Builder Prompts](docs/bots/ai-chatbot-kb-builder-prompts.md)
