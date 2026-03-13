@@ -2,6 +2,8 @@
 
 Aquí se documenta el flujo de trabajo para la venta de propiedades.
 
+Los pipelines comerciales de nueva construcción ahora están documentados en `docs/pipelines-de-venta.md`.
+
 ## Proceso Post-Contrato: Guía Detallada
 
 Una vez que una propiedad está bajo contrato, comienza un período crítico de 20 días que requiere una gestión meticulosa para asegurar un cierre exitoso y proteger la comisión del cliente. A continuación se detalla el flujo de trabajo.

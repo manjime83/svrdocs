@@ -12,4 +12,5 @@
 - [¡Bienvenida a la documentación de Sandra Vargas Realtor!](docs/index.md)
 - [Estrategias de Marketing](docs/marketing.md)
 - [Guía de Inicio](docs/onboarding.md)
+- [Pipelines de Venta](docs/pipelines-de-venta.md)
 - [Procesos de Venta](docs/ventas.md)
