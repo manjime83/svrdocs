@@ -47,6 +47,7 @@ Este pipeline separa dos cosas que no deben mezclarse:
 - Ordenar oportunidades reales de compra dentro de un flujo claro.
 - Distinguir entre oportunidades activas y oportunidades reales que todavía no se ejecutan.
 - Acompañar la selección de la propiedad específica.
+- Reflejar claramente el momento en que la operación entra bajo contrato con el builder.
 - Ordenar la parte financiera, contractual y de cierre dentro de un solo flujo.
 - Facilitar seguimiento, reporting y automatizaciones sin inflar el pipeline con leads fríos.
 
@@ -54,12 +55,13 @@ Este pipeline separa dos cosas que no deben mezclarse:
 
 #### 1. Oportunidad Nueva
 
-**Objetivo:** registrar una oportunidad válida apenas se confirma que existe intención real.
+**Objetivo:** registrar y trabajar una oportunidad válida apenas se confirma que existe intención real.
 
 - **Entrada a la etapa:** ya se decidió abrir la oportunidad porque el contacto mostró intención real de compra.
-- **Acción principal:** registrar la oportunidad, documentar por qué existe y capturar el contexto comercial inicial.
+- **Acción principal:** registrar la oportunidad, documentar por qué existe y trabajarla mientras todavía está en fase comercial abierta.
 - **Debe quedar claro al menos:** tipo de compra, rango de tiempo, presupuesto aproximado y motivo de interés.
-- **Mover a la siguiente etapa cuando:** ya se confirmó si la oportunidad debe activarse ahora o si realmente debe quedar en espera.
+- **Incluye normalmente:** conversaciones activas, validación de perfil, seguimiento comercial y preparación para revisar opciones concretas.
+- **Mover a la siguiente etapa cuando:** la oportunidad debe quedar en `En espera` por timing futuro o ya está lista para pasar a selección de opciones.
 
 #### 2. En espera
 
@@ -69,48 +71,40 @@ Este pipeline separa dos cosas que no deben mezclarse:
 - **Casos típicos:** compra en 3 a 6 meses, espera vender otra propiedad, espera fondos, viaje futuro, decisión familiar pendiente o visita próxima.
 - **Acción principal:** dejar documentado por qué la oportunidad existe, por qué está pausada y cuándo se debe reactivar.
 - **Campos mínimos recomendados:** motivo de espera, fecha estimada de reactivación, próxima tarea y notas de contexto.
-- **Mover a la siguiente etapa cuando:** el cliente vuelve a activar la búsqueda y ya está listo para trabajar opciones reales.
+- **Mover a la siguiente etapa cuando:** el cliente vuelve a activar la compra y la oportunidad regresa al trabajo comercial normal en `Oportunidad Nueva`.
 
-#### 3. Activa
-
-**Objetivo:** trabajar comercialmente una oportunidad que ya puede avanzar en el presente.
-
-- **Entrada a la etapa:** la oportunidad ya está abierta y el cliente puede avanzar ahora.
-- **Acción principal:** conversar, confirmar perfil de compra, resolver dudas y validar que existe una base suficiente para pasar a selección.
-- **Validaciones clave:** presupuesto, tipo de compra, forma de pago, país, plazo estimado y objetivo de compra.
-- **Mover a la siguiente etapa cuando:** ya están revisando opciones concretas de compra.
-
-#### 4. Seleccionando
+#### 3. Seleccionando
 
 **Objetivo:** acompañar la búsqueda de la propiedad específica hasta dejar una opción definida.
 
-- **Entrada a la etapa:** el cliente ya está viendo opciones concretas contigo.
+- **Entrada a la etapa:** la oportunidad ya está abierta, el cliente puede avanzar ahora y ya se están revisando opciones concretas contigo.
 - **Acción principal:** revisar comunidades, modelos, inventarios o propiedades hasta definir la opción elegida.
-- **Resultado esperado:** existe una propiedad seleccionada y la operación está encaminada para reserva, depósito o inicio formal de documentación.
-- **Mover a la siguiente etapa cuando:** ya toca completar banco, fondos, documentos y requisitos previos a la firma.
+- **Resultado esperado:** existe una propiedad seleccionada y el cliente está listo para entregar lo necesario para entrar bajo contrato.
+- **Mover a la siguiente etapa cuando:** ya se inicia con el builder la entrega de documentos, depósito y datos necesarios para preparar el contrato.
+
+#### 4. Bajo Contrato
+
+**Objetivo:** formalizar la entrada de la operación con el builder para preparar el contrato de compraventa.
+
+- **Entrada a la etapa:** ya existe una propiedad definida y se está ejecutando el paso formal para poner al cliente bajo contrato.
+- **Acción principal:** coordinar la entrega de documentos, depósito, datos del comprador y cualquier requisito inicial que el builder necesita para preparar la firma del contrato de compraventa.
+- **Resultado esperado:** el builder recibió lo necesario y la operación quedó encaminada como compra formal en proceso.
+- **Mover a la siguiente etapa cuando:** la operación ya quedó bajo contrato y entra en la fase de requisitos financieros, documentales y de seguimiento post-contrato.
 
 #### 5. Financiando
 
 **Objetivo:** dejar al cliente listo para formalizar la compra.
 
 - **Incluye:** pre-approval, lender, proof of funds, fondos adicionales, documentos personales, LLC si aplica y datos correctos del comprador.
-- **Acción principal:** resolver requisitos financieros y documentales sin sacar la oportunidad del flujo principal.
+- **Acción principal:** resolver requisitos financieros y documentales una vez que la operación ya está bajo contrato.
 - **Notas:** esta etapa cubre tanto clientes financiados como cash, pero conviene identificar la ruta financiera de cada oportunidad.
-- **Mover a la siguiente etapa cuando:** el cliente ya está listo para firmar o entrar en compromiso formal.
+- **Mover a la siguiente etapa cuando:** ya quedaron resueltos los requisitos principales y la operación entra en coordinación final para el cierre.
 
-#### 6. Firmando
+#### 6. Cerrando
 
-**Objetivo:** formalizar el compromiso contractual de la compra.
+**Objetivo:** llevar la operación hasta su cierre final en title company o notaría.
 
-- **Entrada a la etapa:** ya existe decisión firme de compra y se está coordinando firma, depósito o contrato.
-- **Acción principal:** coordinar firma, depósito, documentos contractuales y arranque formal de la operación.
-- **Resultado esperado:** contrato firmado y operación formalmente en marcha.
-- **Mover a la siguiente etapa cuando:** la operación entra en tramo final hacia el cierre.
-
-#### 7. Cerrando
-
-**Objetivo:** llevar la operación hasta su finalización.
-
+- **Entrada a la etapa:** la operación ya está bajo contrato, pasó por el seguimiento financiero y entra en su tramo final de cierre.
 - **Incluye:** coordinación final, fondos de cierre, title, walkthrough, firma final y cierre oficial.
 - **Acción principal:** asegurar que la transacción termine correctamente y sin pendientes mayores.
 - **Resultado esperado:** la compra queda cerrada y lista para seguimiento post-venta.
@@ -122,10 +116,13 @@ Este pipeline separa dos cosas que no deben mezclarse:
 - Si existe intención real, pero el momento de compra es futuro, la oportunidad puede entrar y quedar en `En espera`.
 - `En espera` no significa duda general ni falta de trabajo; significa oportunidad real con ejecución futura.
 - Toda oportunidad en `En espera` debe tener motivo de espera y fecha estimada de reactivación.
+- Si una oportunidad sale de `En espera`, debe volver a `Oportunidad Nueva`.
 - Si falta información crítica, la oportunidad debe quedarse en la etapa actual.
 - Si el cliente ya puede avanzar ahora, no debe quedarse en `En espera`.
 - Si el cliente cambia de propiedad, puede volver a trabajar opciones dentro de `Seleccionando` sin perder la lógica del proceso.
+- `Bajo Contrato` representa el momento en que el builder recibe documentos, depósito y datos para preparar la firma del contrato de compraventa.
 - `Financiando` debe cubrir tanto clientes financiados como cash.
+- Después de `Financiando`, la oportunidad pasa directamente a `Cerrando`.
 - Si el contrato se cae, conviene evaluar si vuelve a `Seleccionando`, si regresa a `En espera` o si termina en `Lost`, según el caso.
 
 ## Criterios para cambiar el estado de la oportunidad
@@ -167,7 +164,7 @@ Siempre conviene guardar un motivo claro de pérdida.
 
 ## Relación con el proceso post-contrato
 
-Las etapas `Firmando` y `Cerrando` conectan con el proceso operativo documentado en `docs/ventas.md`.
+Las etapas `Bajo Contrato`, `Financiando` y `Cerrando` conectan con el proceso operativo documentado en `docs/ventas.md`.
 
 Ese documento profundiza en lo que ocurre después del contrato, incluyendo lender, appraisal, LLC, validación de correos, fondos y coordinación final hasta el cierre.
 
