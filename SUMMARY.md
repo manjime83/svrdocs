@@ -2,8 +2,10 @@
 
 - [Procesos de Alquiler](README.md)
 - [Contenido y Prompts](docs/contenido/index.md)
+- [Prompts para Proyectos Nuevos](docs/contenido/prompts-para-proyectos-nuevos.md)
 - [Prompt de Trabajo](docs/contenido/prompt-de-trabajo.md)
 - [System Prompt](docs/contenido/system-prompt.md)
+- [Prompt Supervisor](docs/contenido/prompt-supervisor.md)
 - [Herramientas y Software](docs/herramientas.md)
 - [Bots y Automatizaciones](docs/bots/index.md)
 - [AI Chatbot + KB Builder Prompts](docs/bots/ai-chatbot-kb-builder-prompts.md)

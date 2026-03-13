@@ -35,8 +35,10 @@ nav:
   - Inicio: index.md
   - Contenido y Prompts:
       - Vista General: contenido/index.md
+      - Prompts para Proyectos Nuevos: contenido/prompts-para-proyectos-nuevos.md
       - Prompt de Trabajo: contenido/prompt-de-trabajo.md
       - System Prompt: contenido/system-prompt.md
+      - Prompt Supervisor: contenido/prompt-supervisor.md
   - Procesos de Alquiler: procesos-de-alquiler.md
   - Herramientas y Software: herramientas.md
   - Bots y Automatizaciones:
