@@ -23,7 +23,6 @@ Esta guía funciona como estándar interno para piezas de video que se publicar�
 - `4:5` es el formato recomendado para Feed en móvil.
 - `9:16` es el formato recomendado para Stories y Reels.
 - `1:1` puede usarse cuando el placement cuadrado lo requiera o cuando se quiera una variante específica para ubicaciones cuadradas.
-- `16:9` debe entregarse cuando la campaña use placements horizontales.
 - Si una campaña solo correrá en Feed, `4:5` puede ser el archivo principal.
 - Si una campaña solo correrá en Stories y Reels, `9:16` puede ser el archivo principal.
 - Si una campaña correrá en placements mixtos, no debe subirse un solo archivo esperando que Meta lo recorte bien en todos los formatos.
@@ -35,10 +34,9 @@ Esta guía funciona como estándar interno para piezas de video que se publicar�
   `9:16` para Stories y Reels.
   `4:5` para Feed.
   `1:1` para placements cuadrados cuando aplique.
-  `16:9` para placements horizontales.
 - No confiar en autocrop cuando hay subtítulos, texto, logo, CTA o encuadres cerrados.
 - Si el equipo no va a producir variantes por placement, entonces deben limitarse los placements del anuncio para que solo use formatos compatibles.
-- Antes de aprobar una pieza, revisar en Ads Manager la vista previa de `Vertical`, `Square` y `Horizontal` y confirmar que no aparezcan alertas.
+- Antes de aprobar una pieza, revisar en Ads Manager la vista previa de los placements activos y confirmar que no aparezcan alertas.
 
 ### Zona segura
 
@@ -47,7 +45,6 @@ Esta guía funciona como estándar interno para piezas de video que se publicar�
 - En un video `4:5`, los elementos críticos no deben quedar pegados a los bordes superior e inferior.
 - En un video `9:16`, los elementos críticos deben mantenerse lejos de las áreas donde Meta superpone interfaz, captions y controles.
 - Si se piensa adaptar la misma grabación a `4:5` o `1:1`, el sujeto principal debe mantenerse cerca del centro para permitir un recorte limpio.
-- Un `16:9` limpio normalmente requiere reencuadre manual o una versión editada aparte; no debe asumirse que saldrá bien desde un archivo vertical.
 - Las franjas superior e inferior deben usarse solo para fondo, textura o elementos no críticos.
 - Evitar colocar elementos clave pegados a bordes, esquinas o en la parte inferior derecha, donde la interfaz de Meta suele superponer controles e información.
 
@@ -132,7 +129,7 @@ Usar esta lista antes de entregar el video y volver a revisarla dentro de Ads Ma
 
 #### 4. Verificación en Ads Manager
 
-- `Preview:` revisar `Vertical`, `Square` y `Horizontal` si esos placements están activos.
+- `Preview:` revisar los placements activos dentro de Ads Manager antes de aprobar.
 - `Recorte:` confirmar que no aparezcan warnings de recorte o de incompatibilidad de placement.
 - `Cobertura de texto:` confirmar que no aparezca el warning de texto cubierto por el icono de perfil o el botón de CTA.
 - `Subtítulos:` confirmar que no queden demasiado abajo ni tapados por interfaz.
@@ -173,4 +170,3 @@ El seguimiento comercial y la gestión de oportunidades se realiza a través de 
 6. **Cierre Ganado / Perdido:** 
    - **Ganado:** Contrato firmado y paso a procesos de post-venta.
    - **Perdido:** Movimiento a campañas automáticas de *reactivación* a largo plazo.
-
