@@ -154,3 +154,23 @@ Usar esta lista antes de entregar el video y volver a revisarla dentro de Ads Ma
   `https://www.facebook.com/business/news/instagram-reels-safe-zones`
 - Audio Engineering Society: recomendaciones de loudness para distribución online.
   `https://aes2.org/resources/audio-topics/loudness-project/learn-more/`
+
+## Pipeline de Ventas (CRM)
+
+El seguimiento comercial y la gestión de oportunidades se realiza a través de un Pipeline de Ventas estandarizado en **Go High Level**. Este modelo permite organizar el flujo de los leads desde su captación inicial en campañas de Meta Ads hasta su cierre o reactivación.
+
+### Diagrama de Flujo Estándar
+
+![Pipeline de Ventas](assets/sales-pipeline.svg)
+
+### Etapas Principales
+
+1. **Lead Nuevo:** Ingreso automático desde campañas o sitio web. Se activan las secuencias de auto-respuesta.
+2. **Contactado:** El equipo comercial realiza el primer contacto o calificación. El lead entra en flujos de *nurturing* a través de email y SMS.
+3. **Cita Agendada:** Confirmación de una reunión o visita. El CRM dispara recordatorios automáticos multicanal (WhatsApp, SMS, Email).
+4. **Presentación:** Realización de la visita o junta. Etapa de resolución de dudas y envío de propuestas formales.
+5. **Negociación:** Revisión de la oferta y ajustes finales en condiciones de pago.
+6. **Cierre Ganado / Perdido:** 
+   - **Ganado:** Contrato firmado y paso a procesos de post-venta.
+   - **Perdido:** Movimiento a campañas automáticas de *reactivación* a largo plazo.
+

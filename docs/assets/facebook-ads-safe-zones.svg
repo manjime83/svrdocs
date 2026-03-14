@@ -1,9 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 1000" width="1400" height="1000" role="img" aria-labelledby="title desc">
   <title id="title">Referencia visual de zonas seguras para video en Facebook Ads</title>
   <desc id="desc">Diagrama mejorado con zonas seguras, de precaución y peligro para formatos 4:5 y 9:16 en Meta Ads.</desc>
   <defs>
     <style>
-      @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap');
+      <![CDATA[
+      @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
       * { font-family: 'Inter', system-ui, -apple-system, sans-serif; }
       .bg-main { fill: #0f172a; }
       .panel { fill: #1e293b; stroke: none; }
@@ -28,6 +30,7 @@
 
       .ui-element { fill: rgba(255,255,255,0.15); }
       .ui-text { fill: rgba(255,255,255,0.25); rx: 4; }
+      ]]>
     </style>
 
     <pattern id="danger-pattern" width="12" height="12" patternTransform="rotate(45 0 0)" patternUnits="userSpaceOnUse">
