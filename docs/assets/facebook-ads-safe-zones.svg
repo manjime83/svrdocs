@@ -1,0 +1,191 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 1000" width="1400" height="1000" role="img" aria-labelledby="title desc">
+  <title id="title">Referencia visual de zonas seguras para video en Facebook Ads</title>
+  <desc id="desc">Diagrama mejorado con zonas seguras, de precaución y peligro para formatos 4:5 y 9:16 en Meta Ads.</desc>
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap');
+      * { font-family: 'Inter', system-ui, -apple-system, sans-serif; }
+      .bg-main { fill: #0f172a; }
+      .panel { fill: #1e293b; stroke: none; }
+      .panel-stroke { fill: none; stroke: #334155; stroke-width: 2; rx: 16; }
+      .text-title { fill: #f8fafc; font-size: 32px; font-weight: 700; }
+      .text-subtitle { fill: #94a3b8; font-size: 18px; font-weight: 400; }
+      .text-label { fill: #e2e8f0; font-size: 20px; font-weight: 600; }
+      .text-zone { font-size: 15px; font-weight: 600; text-anchor: middle; }
+      .text-desc { font-size: 14px; font-weight: 500; text-anchor: middle; }
+
+      .zone-safe-fill { fill: rgba(16, 185, 129, 0.12); }
+      .zone-safe-stroke { stroke: #10b981; stroke-width: 2; stroke-dasharray: 6 4; fill: none; }
+      .zone-safe-text { fill: #10b981; }
+
+      .zone-warn-fill { fill: rgba(245, 158, 11, 0.12); }
+      .zone-warn-stroke { stroke: #f59e0b; stroke-width: 2; stroke-dasharray: 6 4; fill: none; }
+      .zone-warn-text { fill: #f59e0b; }
+
+      .zone-danger-fill { fill: rgba(239, 68, 68, 0.12); }
+      .zone-danger-stroke { stroke: #ef4444; stroke-width: 2; stroke-dasharray: 6 4; fill: none; }
+      .zone-danger-text { fill: #ef4444; }
+
+      .ui-element { fill: rgba(255,255,255,0.15); }
+      .ui-text { fill: rgba(255,255,255,0.25); rx: 4; }
+    </style>
+
+    <pattern id="danger-pattern" width="12" height="12" patternTransform="rotate(45 0 0)" patternUnits="userSpaceOnUse">
+      <line x1="0" y1="0" x2="0" y2="12" stroke="rgba(239, 68, 68, 0.25)" stroke-width="2" />
+    </pattern>
+    <pattern id="warn-pattern" width="12" height="12" patternTransform="rotate(45 0 0)" patternUnits="userSpaceOnUse">
+      <line x1="0" y1="0" x2="0" y2="12" stroke="rgba(245, 158, 11, 0.25)" stroke-width="2" />
+    </pattern>
+
+    <clipPath id="clip-feed">
+      <rect x="0" y="20" width="480" height="600" rx="16" />
+    </clipPath>
+    <clipPath id="clip-reels">
+      <rect x="0" y="20" width="360" height="640" rx="16" />
+    </clipPath>
+  </defs>
+
+  <!-- Background -->
+  <rect class="bg-main" width="1400" height="1000" />
+
+  <!-- Header -->
+  <text x="80" y="70" class="text-title">Facebook &amp; Instagram Ads</text>
+  <text x="80" y="105" class="text-subtitle">Guía visual de zonas seguras para creativos en Video</text>
+
+  <!-- Legend -->
+  <g transform="translate(80, 150)">
+    <rect x="0" y="0" width="20" height="20" rx="4" class="zone-safe-fill" stroke="#10b981" stroke-width="2"/>
+    <text x="32" y="15" fill="#e2e8f0" font-size="14" font-weight="500">Zona Segura (Texto, Logos, Producto)</text>
+
+    <rect x="330" y="0" width="20" height="20" rx="4" class="zone-warn-fill" stroke="#f59e0b" stroke-width="2"/>
+    <text x="362" y="15" fill="#e2e8f0" font-size="14" font-weight="500">Precaución (Puede cortarse según dispositivo)</text>
+
+    <rect x="680" y="0" width="20" height="20" rx="4" class="zone-danger-fill" stroke="#ef4444" stroke-width="2"/>
+    <text x="712" y="15" fill="#e2e8f0" font-size="14" font-weight="500">Peligro (Oculto por Interfaz de Usuario)</text>
+  </g>
+
+  <!-- 4:5 FEED AD -->
+  <g transform="translate(180, 230)">
+    <text x="240" y="-30" class="text-label" text-anchor="middle">Feed (4:5)</text>
+    <text x="240" y="-8" fill="#94a3b8" font-size="14" text-anchor="middle">1080 x 1350 px</text>
+
+    <!-- Phone/Post Frame Base -->
+    <rect class="panel" x="0" y="20" width="480" height="600" rx="16" />
+
+    <g clip-path="url(#clip-feed)">
+      <!-- Danger Top (Profile overlay area) -->
+      <rect x="0" y="20" width="480" height="70" class="zone-danger-fill" />
+      <rect x="0" y="20" width="480" height="70" fill="url(#danger-pattern)" />
+      <rect x="0" y="20" width="480" height="70" class="zone-danger-stroke" />
+      <text x="240" y="60" class="text-zone zone-danger-text">Oculto por Cabecera</text>
+
+      <!-- UI Elements Top -->
+      <circle cx="36" cy="55" r="16" class="ui-element" />
+      <rect x="64" y="45" width="120" height="8" class="ui-text" />
+      <rect x="64" y="61" width="80" height="6" class="ui-text" />
+      <circle cx="450" cy="55" r="4" class="ui-element" />
+      <circle cx="435" cy="55" r="4" class="ui-element" />
+      <circle cx="420" cy="55" r="4" class="ui-element" />
+
+      <!-- Warn Top -->
+      <rect x="0" y="90" width="480" height="20" class="zone-warn-fill" />
+      <rect x="0" y="90" width="480" height="20" class="zone-warn-stroke" />
+
+      <!-- Safe Zone Center -->
+      <rect x="0" y="110" width="480" height="380" class="zone-safe-fill" />
+      <rect x="0" y="110" width="480" height="380" class="zone-safe-stroke" />
+      <text x="240" y="290" class="text-title zone-safe-text" style="font-size: 28px;">ZONA SEGURA</text>
+      <text x="240" y="325" class="text-desc zone-safe-text">Mantén el texto principal, logos</text>
+      <text x="240" y="345" class="text-desc zone-safe-text">y llamados a la acción aquí</text>
+
+      <!-- Warn Bottom -->
+      <rect x="0" y="490" width="480" height="20" class="zone-warn-fill" />
+      <rect x="0" y="490" width="480" height="20" class="zone-warn-stroke" />
+
+      <!-- Danger Bottom (Text & CTA) -->
+      <rect x="0" y="510" width="480" height="110" class="zone-danger-fill" />
+      <rect x="0" y="510" width="480" height="110" fill="url(#danger-pattern)" />
+      <rect x="0" y="510" width="480" height="110" class="zone-danger-stroke" />
+      <text x="240" y="555" class="text-zone zone-danger-text">Oculto por Copy y Controles</text>
+
+      <!-- UI Elements Bottom -->
+      <rect x="20" y="530" width="440" height="30" class="ui-element" rx="4"/>
+      <rect x="20" y="575" width="300" height="10" class="ui-text" />
+      <rect x="20" y="595" width="200" height="10" class="ui-text" />
+    </g>
+
+    <!-- Stroke overlay to hide clipping edges -->
+    <rect class="panel-stroke" x="0" y="20" width="480" height="600" />
+  </g>
+
+
+  <!-- 9:16 REELS/STORIES AD -->
+  <g transform="translate(860, 230)">
+    <text x="180" y="-30" class="text-label" text-anchor="middle">Reels &amp; Stories (9:16)</text>
+    <text x="180" y="-8" fill="#94a3b8" font-size="14" text-anchor="middle">1080 x 1920 px</text>
+
+    <!-- Phone Frame Base -->
+    <rect class="panel" x="0" y="20" width="360" height="640" rx="16" />
+
+    <g clip-path="url(#clip-reels)">
+      <!-- Danger Top (App UI / Stories header) -->
+      <rect x="0" y="20" width="360" height="85" class="zone-danger-fill" />
+      <rect x="0" y="20" width="360" height="85" fill="url(#danger-pattern)" />
+      <rect x="0" y="20" width="360" height="85" class="zone-danger-stroke" />
+      <text x="180" y="70" class="text-zone zone-danger-text">Interfaz Superior</text>
+
+      <!-- Right Side Danger (Reels UI) -->
+      <rect x="280" y="320" width="80" height="220" class="zone-danger-fill" />
+      <rect x="280" y="320" width="80" height="220" fill="url(#danger-pattern)" />
+      <rect x="280" y="320" width="80" height="220" class="zone-danger-stroke" />
+      <!-- UI icons right -->
+      <circle cx="320" cy="350" r="14" class="ui-element" />
+      <circle cx="320" cy="400" r="14" class="ui-element" />
+      <circle cx="320" cy="450" r="14" class="ui-element" />
+      <circle cx="320" cy="500" r="14" class="ui-element" />
+
+      <!-- Bottom Danger (Description, audio, CTA) -->
+      <rect x="0" y="540" width="360" height="120" class="zone-danger-fill" />
+      <rect x="0" y="540" width="360" height="120" fill="url(#danger-pattern)" />
+      <rect x="0" y="540" width="360" height="120" class="zone-danger-stroke" />
+      <text x="180" y="565" class="text-zone zone-danger-text">Oculto por Desc. y CTA</text>
+
+      <!-- UI elements bottom -->
+      <circle cx="32" cy="585" r="12" class="ui-element" />
+      <rect x="55" y="580" width="120" height="10" class="ui-text" />
+      <rect x="20" y="610" width="240" height="8" class="ui-text" />
+      <rect x="20" y="625" width="160" height="8" class="ui-text" />
+      <rect x="20" y="640" width="320" height="15" class="ui-element" rx="4" />
+
+      <!-- Warning Area Top -->
+      <rect x="0" y="105" width="360" height="40" class="zone-warn-fill" />
+      <rect x="0" y="105" width="360" height="40" class="zone-warn-stroke" />
+      <text x="180" y="130" class="text-desc zone-warn-text">Precaución</text>
+
+      <!-- Warning Area Bottom -->
+      <rect x="0" y="500" width="280" height="40" class="zone-warn-fill" />
+      <rect x="0" y="500" width="280" height="40" class="zone-warn-stroke" />
+      <text x="140" y="525" class="text-desc zone-warn-text">Precaución</text>
+
+      <!-- Safe Zone Area -->
+      <path d="M 0 145 L 360 145 L 360 320 L 280 320 L 280 500 L 0 500 Z" class="zone-safe-fill" />
+      <path d="M 0 145 L 360 145 L 360 320 L 280 320 L 280 500 L 0 500 Z" class="zone-safe-stroke" />
+
+      <text x="160" y="320" class="text-title zone-safe-text" style="font-size: 24px;">ZONA SEGURA</text>
+      <text x="160" y="355" class="text-desc zone-safe-text">Priorizar centro-izquierda</text>
+      <text x="160" y="375" class="text-desc zone-safe-text">para el mensaje clave</text>
+    </g>
+
+    <!-- Stroke overlay -->
+    <rect class="panel-stroke" x="0" y="20" width="360" height="640" />
+  </g>
+
+  <!-- Footer Tip -->
+  <rect x="80" y="910" width="1240" height="60" rx="12" fill="#1e293b" stroke="#334155" stroke-width="2" />
+  <!-- Info Icon -->
+  <circle cx="115" cy="940" r="12" fill="#3b82f6" />
+  <text x="115" y="945" fill="#ffffff" font-size="14" font-weight="700" text-anchor="middle">i</text>
+  <text x="145" y="945" fill="#94a3b8" font-size="15" font-weight="500">
+    Tip Pro: Las zonas varían ligeramente entre dispositivos y ubicaciones. Exporta tu creativo y usa la vista previa en Ads Manager para garantizar la legibilidad.
+  </text>
+</svg>
