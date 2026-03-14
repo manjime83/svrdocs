@@ -53,6 +53,9 @@ Este pipeline separa dos cosas que no deben mezclarse:
 
 ## Etapas del pipeline
 
+### Referencia Visual
+![Pipeline de Ventas](assets/sales-pipeline.svg)
+
 #### 1. Oportunidad Nueva
 
 **Objetivo:** registrar y trabajar una oportunidad válida apenas se confirma que existe intención real.
