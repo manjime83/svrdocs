@@ -45,6 +45,7 @@ nav:
       - Vista General: bots/index.md
       - AI Chatbot + KB Builder Prompts: bots/ai-chatbot-kb-builder-prompts.md
       - AI Chatbot + KB Builder Prompts (ES): bots/ai-chatbot-kb-builder-prompts-es.md
+      - Exportar conversaciones desde GHL: bots/exportar-conversaciones-ghl.md
       - Laura:
           - Resumen: bots/laura/index.md
           - Personalidad y Estilo: bots/laura/personality.md

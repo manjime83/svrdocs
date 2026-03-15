@@ -4,6 +4,7 @@
 from __future__ import annotations
 
 import argparse
+from concurrent.futures import ThreadPoolExecutor, as_completed
 import json
 import os
 import re
@@ -27,6 +28,7 @@ PAGE_SIZE = 100
 MAX_RETRIES = 4
 DEFAULT_USER_AGENT = "svrdocs-ghl-export/1.0 (+https://services.leadconnectorhq.com)"
 CONVERSATION_SORT_BY = "last_message_date"
+GENERATION_SOURCES = ("conversation", "workflow")
 
 
 class ApiError(RuntimeError):
@@ -39,6 +41,21 @@ class Agent:
     name: str
     source: str
     raw: dict[str, Any]
+
+
+@dataclass(frozen=True)
+class DetectionResult:
+    agent_ids: set[str]
+    strategy: str
+    evidence: list[str]
+
+
+@dataclass(frozen=True)
+class ProcessedConversation:
+    conversation_id: str
+    sort_at: datetime
+    detection: DetectionResult
+    block: str
 
 
 def extract_disallowed_properties(error_text: str) -> set[str]:
@@ -73,6 +90,12 @@ def parse_args() -> argparse.Namespace:
         "--stdout-summary",
         action="store_true",
         help="Imprime tambien el resumen final en stdout.",
+    )
+    parser.add_argument(
+        "--workers",
+        type=int,
+        default=6,
+        help="Cantidad de workers paralelos para exportar conversaciones. Default: 6.",
     )
     return parser.parse_args()
 
@@ -177,13 +200,6 @@ def parse_timestamp(value: Any) -> datetime | None:
     return None
 
 
-def normalize_text(value: Any) -> str:
-    if value is None:
-        return ""
-    text = str(value).strip().lower()
-    return re.sub(r"[^a-z0-9]+", "", text)
-
-
 def slugify(value: str) -> str:
     text = value.strip().lower()
     text = re.sub(r"[^a-z0-9]+", "-", text)
@@ -196,18 +212,6 @@ def first_non_empty(mapping: dict[str, Any], *keys: str) -> Any:
         if value not in (None, "", [], {}):
             return value
     return None
-
-
-def walk_json(value: Any, path: tuple[str, ...] = ()) -> Iterable[tuple[tuple[str, ...], Any]]:
-    if isinstance(value, dict):
-        for key, child in value.items():
-            yield from walk_json(child, path + (str(key),))
-        return
-    if isinstance(value, list):
-        for index, child in enumerate(value):
-            yield from walk_json(child, path + (str(index),))
-        return
-    yield path, value
 
 
 def find_first_list(payload: Any, preferred_keys: tuple[str, ...]) -> list[dict[str, Any]]:
@@ -225,21 +229,6 @@ def find_first_list(payload: Any, preferred_keys: tuple[str, ...]) -> list[dict[
                 return current
             queue.extend(current)
     return []
-
-
-def find_cursor(payload: dict[str, Any]) -> str | None:
-    for key in ("nextCursor", "cursor", "nextPageCursor"):
-        value = payload.get(key)
-        if value:
-            return str(value)
-    meta = payload.get("meta")
-    if isinstance(meta, dict):
-        for key in ("nextCursor", "cursor"):
-            value = meta.get(key)
-            if value:
-                return str(value)
-    return None
-
 
 def extract_agent_candidates(payload: dict[str, Any], source: str) -> list[Agent]:
     items = find_first_list(payload, ("agents", "data", "items"))
@@ -408,18 +397,6 @@ def search_recent_conversations(
     return conversations
 
 
-def get_conversation_detail(
-    api_base: str,
-    headers: dict[str, str],
-    conversation_id: str,
-) -> dict[str, Any]:
-    return make_request(
-        "GET",
-        f"{api_base}/conversations/{conversation_id}",
-        headers,
-    )
-
-
 def get_conversation_messages(
     api_base: str,
     headers: dict[str, str],
@@ -467,52 +444,79 @@ def get_conversation_messages(
     )
     return messages
 
+def get_generation_details(
+    api_base: str,
+    headers: dict[str, str],
+    message_id: str,
+    source: str,
+) -> dict[str, Any]:
+    return make_request(
+        "GET",
+        f"{api_base}/conversation-ai/generations",
+        headers,
+        params={"messageId": message_id, "source": source},
+    )
 
-def build_agent_indexes(agents: dict[str, Agent]) -> tuple[dict[str, str], dict[str, str]]:
-    ids = {agent_id.lower(): agent_id for agent_id in agents}
-    names = {normalize_text(agent.name): agent_id for agent_id, agent in agents.items()}
-    return ids, names
 
-
-def detect_agents_for_conversation(
-    detail: dict[str, Any],
+def detect_agents_by_generation(
+    api_base: str,
+    headers: dict[str, str],
     messages: list[dict[str, Any]],
     agents: dict[str, Agent],
-) -> set[str]:
-    id_index, name_index = build_agent_indexes(agents)
-    matches: set[str] = set()
+) -> DetectionResult:
+    outbound_messages = [
+        message for message in messages if str(first_non_empty(message, "direction") or "").lower() == "outbound"
+    ]
+    outbound_messages.sort(
+        key=lambda message: (
+            bool(str(message.get("userId") or "").strip()),
+            parse_timestamp(first_non_empty(message, "dateAdded", "createdAt")) or datetime.max.replace(tzinfo=UTC),
+        )
+    )
 
-    def register_from_value(path: tuple[str, ...], value: Any, prefer_name: bool = False) -> None:
-        if value is None:
-            return
-        lower_value = str(value).strip().lower()
-        if lower_value in id_index:
-            matches.add(id_index[lower_value])
-            return
+    detected_agent_ids: set[str] = set()
+    evidence: list[str] = []
 
-        normalized_value = normalize_text(value)
-        path_text = ".".join(path).lower()
-        path_mentions_agent = any(token in path_text for token in ("agent", "bot", "assistant", "ai"))
-        if normalized_value and normalized_value in name_index and (path_mentions_agent or prefer_name):
-            matches.add(name_index[normalized_value])
-
-    for payload in (detail, {"messages": messages}):
-        for path, value in walk_json(payload):
-            register_from_value(path, value)
-
-    if matches:
-        return matches
-
-    for message in messages:
-        direction = str(first_non_empty(message, "direction") or "").lower()
-        if direction != "outbound":
+    for message in outbound_messages:
+        message_id = first_non_empty(message, "id", "_id", "messageId")
+        if not message_id:
             continue
-        for key in ("senderName", "userName", "name", "fromName", "ownerName"):
-            value = message.get(key)
-            if value:
-                register_from_value((key,), value, prefer_name=True)
+        message_id = str(message_id)
+        for source in GENERATION_SOURCES:
+            try:
+                generation = get_generation_details(api_base, headers, message_id, source)
+            except ApiError as exc:
+                if "No Ai suggestion Found" in str(exc):
+                    continue
+                raise
+            employee_id = first_non_empty(generation, "employeeId")
+            if not employee_id:
+                continue
+            employee_id = str(employee_id)
+            if employee_id in agents:
+                detected_agent_ids.add(employee_id)
+                if len(evidence) < 8:
+                    evidence.append(f"messageId:{message_id}|source:{source}|employeeId:{employee_id}")
+                break
+            if not detected_agent_ids:
+                return DetectionResult(
+                    agent_ids=set(),
+                    strategy="ghl_generation_unknown_employeeId",
+                    evidence=[
+                        f"messageId:{message_id}",
+                        f"source:{source}",
+                        f"employeeId:{employee_id}",
+                    ],
+                )
 
-    return matches
+    if detected_agent_ids:
+        return DetectionResult(
+            agent_ids=detected_agent_ids,
+            strategy="ghl_generation_employeeId",
+            evidence=evidence,
+        )
+
+    return DetectionResult(agent_ids=set(), strategy="unassigned", evidence=[])
 
 
 def get_contact_label(detail: dict[str, Any]) -> str:
@@ -546,20 +550,9 @@ def speaker_label(message: dict[str, Any], matched_agents: set[str], agents: dic
     direction = str(first_non_empty(message, "direction") or "").lower()
     if direction == "inbound":
         return "LEAD"
-
-    for key in ("senderName", "userName", "name"):
-        value = message.get(key)
-        normalized = normalize_text(value)
-        for agent_id in matched_agents:
-            if normalized and normalized == normalize_text(agents[agent_id].name):
-                return f"BOT:{agents[agent_id].name}"
-
-    raw_type = json.dumps(message, ensure_ascii=False).lower()
-    if any(token in raw_type for token in ('"agent"', '"assistant"', '"bot"', '"aiagent"')):
-        if matched_agents:
-            first_agent = agents[sorted(matched_agents)[0]]
-            return f"BOT:{first_agent.name}"
-        return "BOT"
+    if matched_agents and not str(message.get("userId") or "").strip():
+        first_agent = agents[sorted(matched_agents)[0]]
+        return f"BOT:{first_agent.name}"
 
     if direction == "outbound":
         return "STAFF"
@@ -590,24 +583,26 @@ def message_body(message: dict[str, Any]) -> str:
 
 def render_conversation_block(
     conversation_id: str,
-    detail: dict[str, Any],
+    conversation: dict[str, Any],
     messages: list[dict[str, Any]],
-    matched_agents: set[str],
+    detection: DetectionResult,
     agents: dict[str, Agent],
 ) -> str:
     created_at = parse_timestamp(
-        first_non_empty(detail, "dateAdded", "createdAt", "startDate")
+        first_non_empty(conversation, "dateAdded", "createdAt", "startDate")
     )
     updated_at = parse_timestamp(
-        first_non_empty(detail, "dateUpdated", "updatedAt", "lastMessageDate")
+        first_non_empty(conversation, "dateUpdated", "updatedAt", "lastMessageDate")
     )
-    matched_labels = ", ".join(agents[agent_id].name for agent_id in sorted(matched_agents))
+    matched_labels = ", ".join(agents[agent_id].name for agent_id in sorted(detection.agent_ids))
     header = [
         "=" * 100,
         f"CONVERSATION_ID: {conversation_id}",
-        f"CONTACTO: {get_contact_label(detail)}",
-        f"CANAL: {get_channel_label(detail)}",
+        f"CONTACTO: {get_contact_label(conversation)}",
+        f"CANAL: {get_channel_label(conversation)}",
         f"BOT_ASIGNADO: {matched_labels or 'SIN_ASIGNAR'}",
+        f"BOT_ASSIGNMENT_SOURCE: {detection.strategy}",
+        f"BOT_ASSIGNMENT_EVIDENCE: {', '.join(detection.evidence) if detection.evidence else 'N/D'}",
         f"CREADA_EN: {created_at.isoformat() if created_at else 'N/D'}",
         f"ACTUALIZADA_EN: {updated_at.isoformat() if updated_at else 'N/D'}",
         "-" * 100,
@@ -630,7 +625,7 @@ def render_conversation_block(
             "\n".join(
                 [
                     f"[{timestamp.isoformat() if timestamp else 'N/D'}] "
-                    f"{speaker_label(message, matched_agents, agents)} | {channel}",
+                    f"{speaker_label(message, detection.agent_ids, agents)} | {channel}",
                     message_body(message),
                 ]
             )
@@ -645,12 +640,12 @@ def ensure_output_dir(path: Path) -> None:
 
 def write_exports(
     output_dir: Path,
-    grouped_conversations: dict[str, list[str]],
+    grouped_conversations: dict[str, list[ProcessedConversation]],
     agents: dict[str, Agent],
     summary: dict[str, Any],
 ) -> None:
     ensure_output_dir(output_dir)
-    for bucket, blocks in grouped_conversations.items():
+    for bucket, items in grouped_conversations.items():
         if bucket == "_sin_asignar":
             file_name = "sin-asignar.txt"
             label = "Sin asignar"
@@ -659,19 +654,46 @@ def write_exports(
             file_name = f"{slugify(agent.name)}__{slugify(agent.agent_id)}.txt"
             label = agent.name
 
+        ordered_blocks = [
+            item.block
+            for item in sorted(items, key=lambda item: item.sort_at, reverse=True)
+        ]
+
         content = [
             f"Bot: {label}",
             f"Exportado en: {datetime.now(UTC).isoformat()}",
             f"Rango: ultimos {summary['days']} dias",
-            f"Conversaciones incluidas: {len(blocks)}",
+            f"Conversaciones incluidas: {len(ordered_blocks)}",
             "",
-            "\n".join(blocks),
+            "\n".join(ordered_blocks),
         ]
         (output_dir / file_name).write_text("\n".join(content), encoding="utf-8")
 
     (output_dir / "summary.json").write_text(
         json.dumps(summary, ensure_ascii=False, indent=2),
         encoding="utf-8",
+    )
+
+
+def process_conversation(
+    api_base: str,
+    headers: dict[str, str],
+    conversation: dict[str, Any],
+    agents: dict[str, Agent],
+) -> ProcessedConversation | None:
+    conversation_id = first_non_empty(conversation, "id", "_id", "conversationId")
+    if not conversation_id:
+        return None
+    conversation_id = str(conversation_id)
+    messages = get_conversation_messages(api_base, headers, conversation_id)
+    detection = detect_agents_by_generation(api_base, headers, messages, agents)
+    block = render_conversation_block(conversation_id, conversation, messages, detection, agents)
+    sort_at = conversation_timestamp(conversation) or datetime.fromtimestamp(0, tz=UTC)
+    return ProcessedConversation(
+        conversation_id=conversation_id,
+        sort_at=sort_at,
+        detection=detection,
+        block=block,
     )
 
 
@@ -696,30 +718,30 @@ def main() -> int:
     recent_conversations = search_recent_conversations(api_base, headers, location_id, cutoff)
     print(f"Conversaciones encontradas: {len(recent_conversations)}", file=sys.stderr)
 
-    grouped_conversations: dict[str, list[str]] = defaultdict(list)
+    grouped_conversations: dict[str, list[ProcessedConversation]] = defaultdict(list)
     assigned_count_by_agent: dict[str, int] = defaultdict(int)
+    worker_count = max(1, args.workers)
 
-    for index, conversation in enumerate(recent_conversations, start=1):
-        conversation_id = first_non_empty(conversation, "id", "_id", "conversationId")
-        if not conversation_id:
-            continue
-        conversation_id = str(conversation_id)
-        print(
-            f"[{index}/{len(recent_conversations)}] Exportando conversacion {conversation_id}...",
-            file=sys.stderr,
-        )
-        detail = get_conversation_detail(api_base, headers, conversation_id)
-        messages = get_conversation_messages(api_base, headers, conversation_id)
-        matched_agents = detect_agents_for_conversation(detail, messages, agents)
-        block = render_conversation_block(conversation_id, detail, messages, matched_agents, agents)
+    with ThreadPoolExecutor(max_workers=worker_count) as executor:
+        future_map = {
+            executor.submit(process_conversation, api_base, headers, conversation, agents): conversation
+            for conversation in recent_conversations
+        }
+        for index, future in enumerate(as_completed(future_map), start=1):
+            processed = future.result()
+            if processed is None:
+                continue
+            print(
+                f"[{index}/{len(recent_conversations)}] Exportando conversacion {processed.conversation_id}...",
+                file=sys.stderr,
+            )
+            if not processed.detection.agent_ids:
+                grouped_conversations["_sin_asignar"].append(processed)
+                continue
 
-        if not matched_agents:
-            grouped_conversations["_sin_asignar"].append(block)
-            continue
-
-        for agent_id in sorted(matched_agents):
-            grouped_conversations[agent_id].append(block)
-            assigned_count_by_agent[agent_id] += 1
+            for agent_id in sorted(processed.detection.agent_ids):
+                grouped_conversations[agent_id].append(processed)
+                assigned_count_by_agent[agent_id] += 1
 
     summary = {
         "generatedAt": datetime.now(UTC).isoformat(),
@@ -728,6 +750,7 @@ def main() -> int:
         "apiBase": api_base,
         "apiVersion": api_version,
         "userAgent": user_agent,
+        "workers": worker_count,
         "detectedAgents": [
             {
                 "id": agent.agent_id,

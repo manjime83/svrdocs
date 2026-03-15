@@ -10,6 +10,7 @@
 - [Bots y Automatizaciones](docs/bots/index.md)
 - [AI Chatbot + KB Builder Prompts](docs/bots/ai-chatbot-kb-builder-prompts.md)
 - [AI Chatbot + KB Builder Prompts (ES)](docs/bots/ai-chatbot-kb-builder-prompts-es.md)
+- [Exportar conversaciones desde GHL](docs/bots/exportar-conversaciones-ghl.md)
 - [Laura](docs/bots/laura/index.md)
 - [Laura - Personalidad y Estilo](docs/bots/laura/personality.md)
 - [Laura - Objetivo y Flujo](docs/bots/laura/objetivo-y-flujo.md)
