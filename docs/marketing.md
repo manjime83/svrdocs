@@ -6,26 +6,31 @@ Planes y procesos para la promoción de la marca y las propiedades.
 
 Esta guía funciona como estándar interno para piezas de video que se publicarán en Facebook Ads y, cuando aplique, en ubicaciones equivalentes de Meta como Feed, Stories y Reels.
 
-### Especificación base del archivo
+### Formato de archivo y relación de aspecto
 
 - Definir primero en qué placements correrá la campaña antes de editar la pieza final.
-- Si solo se va a generar un solo video, usar `4:5` (`1080 x 1350`) como formato por defecto.
-- Usar `4:5` (`1080 x 1350`) como formato recomendado para campañas centradas en Feed.
-- Usar `9:16` (`1080 x 1920`) para campañas centradas en Stories y Reels.
-- Si la campaña usará placements automáticos o mixtos, preparar también variantes nativas por placement.
-- Exportar en `MP4` con códec `H.264` y audio `AAC`.
-- Trabajar en `1080p` como mínimo.
+- **Contenedor y códec:** exportar en `MP4`, vídeo `H.264`, audio `AAC`.
+- **Resolución:** trabajar como mínimo en `1080p` en el eje largo de cada ratio (ver tabla).
+- Si solo existirá **una** versión del anuncio, debe ser `4:5` (`1080 x 1350`).
+- Si la campaña usará placements automáticos o mixtos, preparar **variantes nativas**; no subir un solo archivo esperando que Meta recorte bien en todos los formatos.
 - Evitar depender de texto pequeño o detalles finos para comunicar el mensaje.
 
-### Relación de aspecto recomendada
+| Uso principal | Relación | Resolución mínima | Notas |
+| --- | --- | --- | --- |
+| Una sola versión para la campaña | `4:5` | `1080 x 1350` | Estándar interno por defecto |
+| Feed móvil | `4:5` | `1080 x 1350` | Archivo principal si la campaña es solo Feed |
+| Stories y Reels | `9:16` | `1080 x 1920` | Archivo principal si la campaña es solo Stories/Reels |
+| Placements cuadrados | `1:1` | `1080 x 1080` | Variante cuando el mix lo requiera |
+| Placements mixtos o Advantage+ | Varias | Según filas anteriores | Una pieza por grupo de placement, no una universal |
 
-- Si solo existirá una sola versión del anuncio, esa versión debe ser `4:5`.
-- `4:5` es el formato recomendado para Feed en móvil.
-- `9:16` es el formato recomendado para Stories y Reels.
-- `1:1` puede usarse cuando el placement cuadrado lo requiera o cuando se quiera una variante específica para ubicaciones cuadradas.
-- Si una campaña solo correrá en Feed, `4:5` puede ser el archivo principal.
-- Si una campaña solo correrá en Stories y Reels, `9:16` puede ser el archivo principal.
-- Si una campaña correrá en placements mixtos, no debe subirse un solo archivo esperando que Meta lo recorte bien en todos los formatos.
+### Parámetros técnicos de exportación
+
+Los límites exactos de Meta (peso máximo, duración máxima por ubicación) cambian; **confirmar siempre los valores vigentes** en la [guía de especificaciones de anuncios de Meta](https://www.facebook.com/business/ads-guide) antes de subir.
+
+- **Bitrate (orientativo):** para piezas en `1080p` y duración típica de anuncio, rango orientativo de ~`10`–`20` Mbps en `H.264` con VBR; priorizar buena nitidez sin inflar el archivo sin necesidad.
+- **FPS:** exportar a `24`, `25` o `30` fps de forma **coherente con el material de origen**; evitar mezclar distintos fps en la misma pieza sin una conversión a propósito.
+- **Audio:** además de la normalización descrita más abajo, usar **48 kHz** de frecuencia de muestreo al exportar el `AAC` para reducir sorpresas entre programas de edición.
+- **Antes de subir:** comprobar que duración y tamaño del archivo cumplen lo que indica el Ads Guide para el formato elegido.
 
 ### Cómo evitar alertas de recorte en Ads Manager
 
@@ -37,6 +42,12 @@ Esta guía funciona como estándar interno para piezas de video que se publicar�
 - No confiar en autocrop cuando hay subtítulos, texto, logo, CTA o encuadres cerrados.
 - Si el equipo no va a producir variantes por placement, entonces deben limitarse los placements del anuncio para que solo use formatos compatibles.
 - Antes de aprobar una pieza, revisar en Ads Manager la vista previa de los placements activos y confirmar que no aparezcan alertas.
+
+### Convención de nombres y entrega
+
+- **Patrón sugerido:** `[slug]_[placement]_[ratio]_v[versión].mp4` usando minúsculas y guiones bajos, por ejemplo `sunset_oaks_feed_4x5_v2.mp4` o `proyecto_x_reels_9x16_v1.mp4`.
+- Incluir en el nombre el **ratio** (`4x5`, `9x16`, `1x1`) o el uso (`feed`, `reels`, `story`) para que quien sube el anuncio asigne la variante correcta a cada grupo de anuncios sin abrir todos los archivos.
+- Agrupar entregas por **carpeta de campaña** o identificador interno y dejar explícito en un readme breve o mensaje qué archivo va a qué conjunto cuando haya más de una variante.
 
 ### Zona segura
 
@@ -63,10 +74,8 @@ Esta guía funciona como estándar interno para piezas de video que se publicar�
 
 - Usar la imagen anterior como referencia rápida para ubicar texto, subtítulos y CTA dentro de un área segura.
 - La validación final debe hacerse siempre en Ads Manager, porque la interfaz puede variar según placement.
-- Referencia oficial de Meta sobre safe zones para Reels:
-  `https://www.facebook.com/business/news/instagram-reels-safe-zones`
-- Referencia oficial de Meta Ads Guide para revisar previews por placement:
-  `https://www.facebook.com/business/ads-guide`
+- Referencia oficial de Meta sobre [safe zones para Reels](https://www.facebook.com/business/news/instagram-reels-safe-zones).
+- [Meta Ads Guide](https://www.facebook.com/business/ads-guide) para revisar previews y especificaciones por placement.
 
 ### Subtítulos
 
@@ -93,7 +102,8 @@ Esta guía funciona como estándar interno para piezas de video que se publicar�
 - Construir cada pieza alrededor de una sola idea principal y un solo CTA.
 - Hacer que la marca, propiedad o propuesta aparezca temprano, sin esperar al cierre.
 - Mantener texto en pantalla corto y escaneable; si una frase no se entiende de un vistazo, debe simplificarse.
-- Diseñar el primer frame para que también funcione como miniatura.
+- Diseñar el **primer frame** para que también funcione como miniatura: sin pantallas en negro vacías, flashes fuertes ni texto a medio aparecer; debe representar bien el anuncio en preview.
+- En **Ads Manager** (cuando la interfaz lo permita para el tipo de creativo), valorar una **imagen de miniatura personalizada** además del primer frame, sobre todo si el corte inicial es deliberadamente sutil o de transición.
 - Usar ritmo visual ágil: cambios de plano, cortes limpios y variación de encuadre.
 - Cerrar con un CTA claro y legible durante el tiempo suficiente para que pueda leerse.
 
@@ -107,7 +117,9 @@ Usar esta lista antes de entregar el video y volver a revisarla dentro de Ads Ma
 - `Formato:` usar `4:5` si la campaña es para Feed y `9:16` si la campaña es para Stories/Reels.
 - `Variantes:` entregar versiones adicionales si la campaña usa placements mixtos.
 - `Compatibilidad:` si no existen variantes suficientes, limitar placements antes de lanzar.
-- `Resolución:` exportado en `1080 x 1350` o `1080 x 1920`, según corresponda.
+- `Resolución:` exportado en `1080 x 1350`, `1080 x 1920` o `1080 x 1080`, según corresponda.
+- `Exportación técnica:` fps coherente (`24` / `25` / `30`), audio `AAC` a `48 kHz`, peso y duración dentro de los límites del [Ads Guide](https://www.facebook.com/business/ads-guide) para el formato usado.
+- `Nomenclatura:` archivo nombrado según la convención de entrega y ubicado en la carpeta o contexto de campaña correcto.
 - `Duración:` la pieza tiene un ritmo ágil y no deja silencios o pausas innecesarias al inicio.
 
 #### 2. Verificación visual
@@ -118,7 +130,7 @@ Usar esta lista antes de entregar el video y volver a revisarla dentro de Ads Ma
 - `Subtítulos:` incluidos, legibles, sincronizados y sin faltas.
 - `Legibilidad:` el texto se lee fácil en pantalla de teléfono, sin tener que pausar.
 - `CTA:` visible, claro y presente al cierre.
-- `Miniatura:` el primer frame se ve limpio y usable como portada.
+- `Miniatura:` el primer frame se ve limpio y usable como portada; miniatura personalizada cargada en Meta cuando aplique.
 
 #### 3. Verificación de audio
 
@@ -143,14 +155,12 @@ Usar esta lista antes de entregar el video y volver a revisarla dentro de Ads Ma
 
 ### Fuentes consultadas
 
-- Meta Ads Guide: formatos y especificaciones para video en Feed, Stories y Reels.
-  `https://www.facebook.com/business/ads-guide`
-- Meta for Business: recomendaciones creativas para video, incluyendo uso de sonido y subtítulos.
-  `https://www.facebook.com/business/news/3-tips-for-creating-better-mobile-video-ads`
-- Meta for Business: guía para diseñar Reels con elementos importantes dentro de la zona segura.
-  `https://www.facebook.com/business/news/instagram-reels-safe-zones`
-- Audio Engineering Society: recomendaciones de loudness para distribución online.
-  `https://aes2.org/resources/audio-topics/loudness-project/learn-more/`
+- [Meta Ads Guide](https://www.facebook.com/business/ads-guide): formatos y especificaciones para video en Feed, Stories y Reels.
+- Meta for Business: [recomendaciones creativas para video móvil](https://www.facebook.com/business/news/3-tips-for-creating-better-mobile-video-ads) (sonido y subtítulos).
+- Meta for Business: [diseño de Reels y zona segura](https://www.facebook.com/business/news/instagram-reels-safe-zones).
+- Audio Engineering Society: [loudness para distribución online](https://aes2.org/resources/audio-topics/loudness-project/learn-more/).
+
+*Última revisión de esta sección: 3 de abril de 2026.*
 
 ## Pipeline de Ventas (CRM)
 
