@@ -6,9 +6,15 @@ Planes y procesos para la promoción de la marca y las propiedades.
 
 Esta guía funciona como estándar interno para piezas de video que se publicarán en Facebook Ads y, cuando aplique, en ubicaciones equivalentes de Meta como Feed, Stories y Reels.
 
+### Flujo recomendado
+
+1. Definir placements y objetivo antes de editar la pieza final.
+2. Producir la variante correcta para cada grupo de placement activo.
+3. Exportar, nombrar y entregar los archivos con una convención consistente.
+4. Validar previews, recortes y cobertura de texto dentro de Ads Manager antes de aprobar.
+
 ### Formato de archivo y relación de aspecto
 
-- Definir primero en qué placements correrá la campaña antes de editar la pieza final.
 - **Contenedor y códec:** exportar en `MP4`, vídeo `H.264`, audio `AAC`.
 - **Resolución:** trabajar como mínimo en `1080p` en el eje largo de cada ratio (ver tabla).
 - Si solo existirá **una** versión del anuncio, debe ser `4:5` (`1080 x 1350`).
@@ -32,16 +38,13 @@ Los límites exactos de Meta (peso máximo, duración máxima por ubicación) ca
 - **Audio:** además de la normalización descrita más abajo, usar **48 kHz** de frecuencia de muestreo al exportar el `AAC` para reducir sorpresas entre programas de edición.
 - **Antes de subir:** comprobar que duración y tamaño del archivo cumplen lo que indica el Ads Guide para el formato elegido.
 
-### Cómo evitar alertas de recorte en Ads Manager
+### Asignación por placement y validación
 
-- Si se quieren evitar avisos como "This ad will not show up on certain placements" o recortes automáticos, entregar una versión específica para cada grupo de placement activo.
-- Entrega recomendada para campañas amplias de Meta:
-  `9:16` para Stories y Reels.
-  `4:5` para Feed.
-  `1:1` para placements cuadrados cuando aplique.
+- Para evitar avisos como "This ad will not show up on certain placements" o recortes automáticos, entregar una versión específica para cada grupo de placement activo.
+- Entrega recomendada para campañas amplias de Meta: `9:16` para Stories/Reels, `4:5` para Feed y `1:1` solo cuando el mix realmente lo requiera.
 - No confiar en autocrop cuando hay subtítulos, texto, logo, CTA o encuadres cerrados.
 - Si el equipo no va a producir variantes por placement, entonces deben limitarse los placements del anuncio para que solo use formatos compatibles.
-- Antes de aprobar una pieza, revisar en Ads Manager la vista previa de los placements activos y confirmar que no aparezcan alertas.
+- Antes de aprobar una pieza, revisar en Ads Manager la vista previa de los placements activos y confirmar que no aparezcan alertas de recorte, incompatibilidad o cobertura de texto.
 
 ### Convención de nombres y entrega
 
@@ -49,24 +52,16 @@ Los límites exactos de Meta (peso máximo, duración máxima por ubicación) ca
 - Incluir en el nombre el **ratio** (`4x5`, `9x16`, `1x1`) o el uso (`feed`, `reels`, `story`) para que quien sube el anuncio asigne la variante correcta a cada grupo de anuncios sin abrir todos los archivos.
 - Agrupar entregas por **carpeta de campaña** o identificador interno y dejar explícito en un readme breve o mensaje qué archivo va a qué conjunto cuando haya más de una variante.
 
-### Zona segura
+### Zona segura y texto en pantalla
 
-- Diseñar fondos, imágenes y movimiento a pantalla completa.
-- Mantener dentro de la zona segura todos los elementos críticos: titular, oferta, CTA, logo, rostros, texto legal y subtítulos.
-- En un video `4:5`, los elementos críticos no deben quedar pegados a los bordes superior e inferior.
-- En un video `9:16`, los elementos críticos deben mantenerse lejos de las áreas donde Meta superpone interfaz, captions y controles.
-- Si se piensa adaptar la misma grabación a `4:5` o `1:1`, el sujeto principal debe mantenerse cerca del centro para permitir un recorte limpio.
-- Las franjas superior e inferior deben usarse solo para fondo, textura o elementos no críticos.
-- Evitar colocar elementos clave pegados a bordes, esquinas o en la parte inferior derecha, donde la interfaz de Meta suele superponer controles e información.
-
-### Zona segura para texto
-
-- Todo texto en pantalla debe tratarse como elemento de alto riesgo de cobertura.
-- No colocar titulares, bullets, precios, nombres, disclaimers ni CTA cerca de la esquina superior izquierda, donde puede aparecer el icono de perfil.
-- No colocar texto importante en la franja inferior, donde Meta puede montar el botón de llamada a la acción y otros elementos de interfaz.
+- Diseñar fondos, imágenes y movimiento a pantalla completa, pero mantener dentro de la zona segura todos los elementos críticos: titular, oferta, CTA, logo, rostros, texto legal y subtítulos.
+- En `4:5`, evitar que los elementos críticos queden pegados a los bordes superior e inferior.
+- En `9:16`, mantenerlos lejos de las áreas donde Meta superpone interfaz, captions y controles.
+- Si una grabación se adaptará a `4:5` o `1:1`, el sujeto principal debe quedar cerca del centro para permitir un recorte limpio.
+- Usar las franjas superior e inferior solo para fondo, textura o elementos no críticos.
+- Tratar todo texto en pantalla como elemento de alto riesgo de cobertura: no colocar titulares, precios, bullets, disclaimers ni CTA cerca de la esquina superior izquierda ni de la franja inferior donde Meta suele mostrar interfaz.
 - Mantener el texto principal en una zona central limpia, con margen suficiente respecto de bordes y esquinas.
-- Si una pieza muestra texto permanente durante varios segundos, revisar la preview de placements dentro de Ads Manager antes de aprobarla.
-- Si Ads Manager muestra el warning de que el texto puede quedar cubierto, la acción correcta es mover el texto, reducir su bloque o reencuadrar la composición; no ignorar la alerta.
+- Si Ads Manager muestra un warning de texto cubierto, mover el texto, reducir su bloque o reencuadrar la composición; no ignorar la alerta.
 
 ### Referencia visual de zonas seguras
 
@@ -82,8 +77,7 @@ Los límites exactos de Meta (peso máximo, duración máxima por ubicación) ca
 - Todas las piezas deben llevar subtítulos siempre.
 - La versión principal debe salir con subtítulos quemados en video para asegurar legibilidad en cualquier placement.
 - Si la operación del anuncio lo permite, también puede añadirse un archivo de captions aparte, pero no sustituye a los subtítulos integrados.
-- Los subtítulos deben colocarse en el tercio inferior de la imagen, pero siempre dentro de la zona segura central.
-- No deben tocar el borde inferior ni quedar en la última franja de pantalla donde se montan controles o texto de interfaz.
+- Los subtítulos deben colocarse en el tercio inferior de la imagen, pero siempre dentro de la zona segura central y sin tocar la franja donde Meta superpone controles.
 - Usar `1` o `2` líneas por bloque, con alto contraste, tipografía gruesa y sombra o caja de apoyo cuando el fondo lo requiera.
 - Los subtítulos deben ser fieles al audio, bien sincronizados y sin errores ortográficos.
 
@@ -113,21 +107,17 @@ Usar esta lista antes de entregar el video y volver a revisarla dentro de Ads Ma
 
 #### 1. Verificación del archivo final
 
-- `Formato:` si solo hay una versión, debe ser `4:5`.
-- `Formato:` usar `4:5` si la campaña es para Feed y `9:16` si la campaña es para Stories/Reels.
-- `Variantes:` entregar versiones adicionales si la campaña usa placements mixtos.
-- `Compatibilidad:` si no existen variantes suficientes, limitar placements antes de lanzar.
-- `Resolución:` exportado en `1080 x 1350`, `1080 x 1920` o `1080 x 1080`, según corresponda.
-- `Exportación técnica:` fps coherente (`24` / `25` / `30`), audio `AAC` a `48 kHz`, peso y duración dentro de los límites del [Ads Guide](https://www.facebook.com/business/ads-guide) para el formato usado.
-- `Nomenclatura:` archivo nombrado según la convención de entrega y ubicado en la carpeta o contexto de campaña correcto.
-- `Duración:` la pieza tiene un ritmo ágil y no deja silencios o pausas innecesarias al inicio.
+- `Formato y variantes:` el ratio corresponde al placement (`4:5`, `9:16` o `1:1`) y existen variantes adicionales si la campaña usa placements mixtos.
+- `Compatibilidad:` si no existen variantes suficientes, los placements del anuncio quedaron limitados antes de lanzar.
+- `Resolución y exportación:` archivo exportado con la resolución correcta, fps coherente (`24` / `25` / `30`), audio `AAC` a `48 kHz` y peso/duración dentro de los límites del [Ads Guide](https://www.facebook.com/business/ads-guide).
+- `Entrega:` archivo nombrado según la convención de entrega y ubicado en la carpeta o contexto de campaña correcto.
+- `Inicio:` la pieza entra rápido en materia y no deja silencios o pausas innecesarias al comienzo.
 
 #### 2. Verificación visual
 
 - `Gancho inicial:` el mensaje principal se entiende en los primeros `2` segundos.
-- `Zona segura:` ningún elemento crítico fuera del área central.
-- `Texto en pantalla:` nada importante cerca del icono de perfil ni del botón de CTA.
-- `Subtítulos:` incluidos, legibles, sincronizados y sin faltas.
+- `Zona segura:` ningún elemento crítico ni bloque de texto importante quedó fuera del área central.
+- `Subtítulos:` incluidos, legibles, sincronizados, sin faltas y ubicados dentro de la zona segura.
 - `Legibilidad:` el texto se lee fácil en pantalla de teléfono, sin tener que pausar.
 - `CTA:` visible, claro y presente al cierre.
 - `Miniatura:` el primer frame se ve limpio y usable como portada; miniatura personalizada cargada en Meta cuando aplique.
@@ -142,8 +132,7 @@ Usar esta lista antes de entregar el video y volver a revisarla dentro de Ads Ma
 #### 4. Verificación en Ads Manager
 
 - `Preview:` revisar los placements activos dentro de Ads Manager antes de aprobar.
-- `Recorte:` confirmar que no aparezcan warnings de recorte o de incompatibilidad de placement.
-- `Cobertura de texto:` confirmar que no aparezca el warning de texto cubierto por el icono de perfil o el botón de CTA.
+- `Warnings:` confirmar que no aparezcan alertas de recorte, incompatibilidad de placement ni cobertura de texto.
 - `Subtítulos:` confirmar que no queden demasiado abajo ni tapados por interfaz.
 - `Versión correcta:` confirmar que cada placement tenga asignada la pieza correcta si hay variantes.
 
