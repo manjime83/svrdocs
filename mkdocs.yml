@@ -41,6 +41,9 @@ nav:
       - Prompt Supervisor: contenido/prompt-supervisor.md
   - Procesos de Alquiler: procesos-de-alquiler.md
   - Herramientas y Software: herramientas.md
+  - Skills:
+      - Vista General: skills/index.md
+      - Meta Ads Video Copy: skills/meta-ads-video-copy.md
   - Bots y Automatizaciones:
       - Vista General: bots/index.md
       - AI Chatbot + KB Builder Prompts: bots/ai-chatbot-kb-builder-prompts.md

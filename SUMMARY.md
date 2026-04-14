@@ -7,6 +7,8 @@
 - [System Prompt](docs/contenido/system-prompt.md)
 - [Prompt Supervisor](docs/contenido/prompt-supervisor.md)
 - [Herramientas y Software](docs/herramientas.md)
+- [Skills Documentados](docs/skills/index.md)
+- [Meta Ads Video Copy](docs/skills/meta-ads-video-copy.md)
 - [Bots y Automatizaciones](docs/bots/index.md)
 - [AI Chatbot + KB Builder Prompts](docs/bots/ai-chatbot-kb-builder-prompts.md)
 - [AI Chatbot + KB Builder Prompts (ES)](docs/bots/ai-chatbot-kb-builder-prompts-es.md)
