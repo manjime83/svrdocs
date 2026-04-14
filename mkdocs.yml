@@ -54,7 +54,9 @@ nav:
           - Personalidad y Estilo: bots/laura/personality.md
           - Objetivo y Flujo: bots/laura/objetivo-y-flujo.md
           - Reglas Operativas: bots/laura/reglas-y-operacion.md
-  - Estrategias de Marketing: marketing.md
+  - Estrategias de Marketing:
+      - Vista General: marketing.md
+      - Guiones de Ads para Propiedades: marketing/guiones-de-ads.md
   - Guía de Inicio: onboarding.md
   - Pipelines de Venta: pipelines-de-venta.md
   - Procesos de Venta: ventas.md

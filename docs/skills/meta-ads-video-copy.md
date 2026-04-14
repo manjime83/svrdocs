@@ -154,7 +154,7 @@ Esta ruta segmenta automáticamente el audio si el archivo preparado supera el l
 ## Flujo recomendado
 
 1. Transcribir el video.
-2. Extraer frames y metadata.
+2. Extraer screenshots y metadata.
 3. Revisar transcript y visuales juntos.
 4. Definir ángulos.
 5. Redactar las variaciones finales.
@@ -181,7 +181,7 @@ Ubicación:
 
 Qué hace:
 
-- extrae frames
+- extrae screenshots empezando en `1.5` segundos y luego cada `3` segundos por defecto
 - extrae `audio.wav`
 - guarda `metadata.json`
 
@@ -191,6 +191,16 @@ Ejemplo:
 python3 ~/.codex/skills/meta-ads-video-copy/scripts/prepare_video_context.py \
   "/ruta/al/video.mov" \
   --output-dir /tmp/meta-video-context
+```
+
+El comportamiento por defecto es empezar en `1.5` segundos y luego sacar un screenshot cada `3` segundos. Si quieres cambiarlo:
+
+```bash
+python3 ~/.codex/skills/meta-ads-video-copy/scripts/prepare_video_context.py \
+  "/ruta/al/video.mov" \
+  --output-dir /tmp/meta-video-context \
+  --interval-seconds 3 \
+  --start-seconds 1.5
 ```
 
 ## Reglas editoriales del skill
@@ -207,7 +217,7 @@ Ejemplo de uso real dentro del flujo:
 
 1. se sube un video corto de menos de `50MB`
 2. se transcribe el audio
-3. se extraen frames
+3. se extraen screenshots desde `1.5s` y luego cada `3s`
 4. se genera un brief interno:
    - audio insights
    - visual insights

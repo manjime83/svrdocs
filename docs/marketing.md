@@ -2,6 +2,10 @@
 
 Planes y procesos para la promoción de la marca y las propiedades.
 
+## Recursos relacionados
+
+- [Guiones de Ads para Propiedades](marketing/guiones-de-ads.md): plantillas reutilizables para anuncios con CTA hacia WhatsApp.
+
 ## Guía de video para Facebook Ads
 
 Esta guía funciona como estándar interno para piezas de video que se publicarán en Facebook Ads y, cuando aplique, en ubicaciones equivalentes de Meta como Feed, Stories y Reels.
