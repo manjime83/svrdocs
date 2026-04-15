@@ -6,6 +6,8 @@ Esta sección reúne skills reutilizables que se usan con Codex para acelerar ta
 
 1. [Meta Ads Video Copy](./meta-ads-video-copy.md)
    Skill para convertir un video en copy listo para Meta Ads Manager, usando transcript, audio y screenshots/frames como fuentes conjuntas.
+2. [Real Estate Modular Ads](./real-estate-modular-ads.md)
+   Skill para investigar una propiedad o proyecto y convertirlo en un plan modular de grabación, hooks, ángulos y testing para Meta Ads.
 
 ## Cómo usar esta sección
 

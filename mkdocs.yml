@@ -44,6 +44,7 @@ nav:
   - Skills:
       - Vista General: skills/index.md
       - Meta Ads Video Copy: skills/meta-ads-video-copy.md
+      - Real Estate Modular Ads: skills/real-estate-modular-ads.md
   - Bots y Automatizaciones:
       - Vista General: bots/index.md
       - AI Chatbot + KB Builder Prompts: bots/ai-chatbot-kb-builder-prompts.md
@@ -56,6 +57,7 @@ nav:
           - Reglas Operativas: bots/laura/reglas-y-operacion.md
   - Estrategias de Marketing:
       - Vista General: marketing.md
+      - Sistema Modular de Ads para Propiedades: marketing/sistema-modular-de-ads.md
       - Guiones de Ads para Propiedades: marketing/guiones-de-ads.md
   - Guía de Inicio: onboarding.md
   - Pipelines de Venta: pipelines-de-venta.md
