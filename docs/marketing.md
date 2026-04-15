@@ -6,6 +6,7 @@ Planes y procesos para la promoción de la marca y las propiedades.
 
 - [Sistema Modular de Ads para Propiedades](marketing/sistema-modular-de-ads.md): metodología para grabar una propiedad una sola vez y salir con una matriz de hooks, ángulos y pruebas.
 - [Guiones de Ads para Propiedades](marketing/guiones-de-ads.md): plantillas reutilizables para anuncios con CTA hacia WhatsApp.
+- [Briefs de Propiedades](marketing/propiedades/index.md): casos concretos con investigación, hooks, ángulos y plan de grabación por propiedad.
 
 ## Guía de video para Facebook Ads
 

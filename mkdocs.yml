@@ -59,6 +59,10 @@ nav:
       - Vista General: marketing.md
       - Sistema Modular de Ads para Propiedades: marketing/sistema-modular-de-ads.md
       - Guiones de Ads para Propiedades: marketing/guiones-de-ads.md
+      - Briefs de Propiedades:
+          - Vista General: marketing/propiedades/index.md
+          - Crosswinds - Estate Key Collection - Freedom: marketing/propiedades/crosswinds-estate-key-collection-freedom.md
+          - Ranches at Lake McLeod - Aspire: marketing/propiedades/ranches-at-lake-mcleod-aspire.md
   - Guía de Inicio: onboarding.md
   - Pipelines de Venta: pipelines-de-venta.md
   - Procesos de Venta: ventas.md
