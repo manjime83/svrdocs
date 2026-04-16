@@ -140,14 +140,16 @@ Brief modular para promocionar la propiedad `Freedom` dentro de `Estate Key Coll
 5. `Si ya contemplas aproximadamente $20,600 para el down payment, tienes ingresos estables y tu crédito está cerca de 620+, esta es de las opciones que conviene revisar con precio confirmado.`
 
 > El estimado de `$20,600` sale de tomar como referencia `5%` del precio investigado de `$412,490`. Es una cifra inicial, aproximada y dependiente del lender, del precio vigente y del perfil del comprador.
+>
+> Usar estos qualifiers como variaciones. No meterlos todos en la misma pieza. La recomendación es grabar varios, pero en cada anuncio armado usar `1` qualifier, o máximo `2` si quieres filtrar más fuerte.
 
 ## CTAs
 
-1. `Escríbeme "SUITE" y te paso precio actualizado, disponibilidad real y tour.`
-2. `Mándame "SUITE" y te comparto precio, tour y disponibilidad del momento.`
-3. `Escríbeme "SUITE" y te digo si esta opción sigue disponible y qué números deberías revisar primero.`
-4. `Mándame "SUITE" y te paso la info actualizada para ver si hace sentido para ti.`
-5. `Escríbeme "SUITE" y te comparto precio vigente, disponibilidad y siguiente paso.`
+1. `Haz clic aquí y escríbeme por WhatsApp "SUITE" para pasarte precio actualizado, disponibilidad real y tour.`
+2. `Escríbeme por WhatsApp "SUITE" y te comparto el precio, el tour y la disponibilidad del momento.`
+3. `Haz clic aquí y escríbeme por WhatsApp "SUITE" para decirte si esta opción sigue disponible y qué números deberías revisar primero.`
+4. `Escríbeme por WhatsApp "SUITE" y te paso la información actualizada para ver si hace sentido para ti.`
+5. `Haz clic aquí y escríbeme por WhatsApp "SUITE" para compartirte precio vigente, disponibilidad y siguiente paso.`
 
 ## Plan de Grabación Modular
 
@@ -156,6 +158,13 @@ Brief modular para promocionar la propiedad `Freedom` dentro de `Estate Key Coll
 - `Bloque 3 - Soft qualifiers:` grabar 3-5 filtros suaves de precalificación como piezas cortas e independientes.
 - `Bloque 4 - CTAs:` grabar todos los cierres en una sola tanda para mantener consistencia verbal y visual.
 - `Bloque 5 - Proof shots:` capturar la evidencia visual que permitirá unir hook + angle + qualifier + CTA sin que el mensaje pierda soporte.
+
+### Regla de Ensamble
+
+- `Versión amplia:` Hook + Angle + CTA
+- `Versión con filtro suave:` Hook + Angle + 1 Soft Qualifier + CTA
+- `Versión de filtro más fuerte:` Hook + Angle + 2 Soft Qualifiers + CTA
+- `Evitar:` Hook + Angle + 3 o más qualifiers + CTA
 
 ## On-screen Text Sugerido
 
@@ -188,7 +197,7 @@ Brief modular para promocionar la propiedad `Freedom` dentro de `Estate Key Coll
 1. Testear primero `3 hooks` usando el mismo ángulo, el mismo qualifier y el mismo CTA.
 2. Elegir el hook ganador.
 3. Mantener ese hook y testear `3 ángulos`.
-4. Una vez gane el ángulo, probar `2-3` qualifiers suaves si hace falta filtrar mejor.
+4. Una vez gane el ángulo, probar qualifiers suaves como variaciones separadas, usando `1` por pieza y `2` solo si hace falta filtrar mejor.
 5. Dejar el CTA constante salvo que exista una razón clara para probar otra variante.
 
 ## Sources

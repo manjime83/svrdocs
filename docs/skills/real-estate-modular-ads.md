@@ -105,6 +105,13 @@ Debe priorizar:
 
 La idea es que el usuario pueda grabar primero todos los hooks, luego todos los ángulos, luego todos los filtros suaves y al final todos los CTA para recombinar después en edición.
 
+Los `soft qualifiers` no deben meterse todos juntos por defecto. La lógica correcta es:
+
+- grabar varias opciones
+- usar `1` qualifier en la mayoría de piezas
+- usar `2` solo cuando se quiera filtrar más fuerte
+- evitar que el anuncio se vuelva una lista de requisitos
+
 ## Criterios heredados de guiones de ads
 
 Además de la modularidad, el skill debe respetar estas reglas base al generar piezas:
