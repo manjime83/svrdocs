@@ -83,7 +83,7 @@ Brief modular para promocionar la propiedad `Freedom` dentro de `Estate Key Coll
 
 ### CTA sugerido
 
-- `Escríbeme "SUITE" y te paso precio actualizado, disponibilidad real y tour.`
+- `Escríbeme por WhatsApp y te paso precio actualizado, disponibilidad real y tour.`
 
 ## Hooks
 
@@ -102,60 +102,70 @@ Brief modular para promocionar la propiedad `Freedom` dentro de `Estate Key Coll
 ### 1. Multigeneracional con privacidad real
 
 - `Core promise:` convivir con familia sin sentir la casa encima.
-- `What to actually say:` Esta no es la típica casa donde alguien termina ocupando un cuarto extra sin privacidad. Aquí hay una suite con entrada separada, salita, kitchenette, recámara y baño, así que mamá, suegros o visitas largas pueden estar cerca sin invadir la dinámica del resto.
-- `Supporting proof:` entrada independiente, living suite, kitchenette, baño privado.
+- `What to actually say:` Esta casa tiene `4 habitaciones`, `3 baños` y `2,109 sq ft`, pero lo más fuerte no es solo el tamaño. Es la suite privada con entrada separada, salita, kitchenette, recámara y baño completo, así que mamá, suegros o visitas largas pueden estar cerca sin invadir la dinámica del resto.
+- `Supporting proof:` 4 habitaciones, 3 baños, 2,109 sq ft, entrada independiente, living suite, kitchenette, baño privado.
 - `Visual location to film:` entrada de la suite, sala de la suite, kitchenette y baño.
 - `What not to say:` no hablar de renta, Airbnb o ingreso extra.
 
 ### 2. Flexibilidad para etapas distintas
 
 - `Core promise:` una casa que se adapta mejor a cambios de vida.
-- `What to actually say:` Lo valioso aquí no es solo el tamaño. Es que hoy te puede servir para familia, mañana para visitas largas y después para otra necesidad, mientras la casa principal sigue teniendo estudio, tres recámaras y patio cubierto.
-- `Supporting proof:` suite privada, study, tres recámaras en la casa principal, patio cubierto.
+- `What to actually say:` Lo valioso aquí no es solo que sea una casa de `1 nivel` con `4 habitaciones` y `3 baños`. Es que hoy te puede servir para familia, mañana para visitas largas y después para otra necesidad, mientras la casa principal sigue teniendo estudio, tres recámaras adicionales y patio cubierto.
+- `Supporting proof:` 1 nivel, 4 habitaciones, 3 baños, suite privada, study, tres recámaras en la casa principal, patio cubierto.
 - `Visual location to film:` suite, estudio, recorrido por recámaras y patio.
 - `What not to say:` no exagerar con `sirve para todo` o `resuelve cualquier etapa`.
 
 ### 3. Utilidad diaria para home office y familia
 
 - `Core promise:` el layout evita improvisar espacios.
-- `What to actually say:` Si necesitas trabajar desde casa o acomodar mejor a tu familia, esta distribución te da opciones reales. La casa principal tiene estudio y zona abierta, y además la suite privada ayuda a separar funciones dentro del mismo hogar.
-- `Supporting proof:` estudio, área social abierta, suite con acceso separado.
+- `What to actually say:` Si necesitas trabajar desde casa o acomodar mejor a tu familia, esta distribución te da opciones reales. Tienes `4 habitaciones`, `3 baños`, estudio, área social abierta y una suite privada adicional, así que no terminas improvisando oficina, cuarto de visitas o espacio familiar.
+- `Supporting proof:` 4 habitaciones, 3 baños, estudio, área social abierta, suite con acceso separado.
 - `Visual location to film:` estudio, cocina/sala principal, entrada de suite.
 - `What not to say:` no prometer silencio absoluto, productividad o beneficio financiero.
 
 ### 4. Valor más allá del interior
 
 - `Core promise:` no compras solo metros, también compras entorno usable.
-- `What to actually say:` Además del layout, aquí también tienes amenidades que sí suman al día a día: piscina, clubhouse, gimnasio, playground y dog park. Eso ayuda a que la casa no cargue sola con toda la experiencia familiar.
-- `Supporting proof:` pool, clubhouse, fitness center, playground, dog park.
+- `What to actually say:` Además de ser una casa de `4 habitaciones`, `3 baños`, `2,109 sq ft` y `1 nivel`, aquí también tienes amenidades que sí suman al día a día: piscina, clubhouse, gimnasio, playground y dog park. Eso ayuda a que la casa no cargue sola con toda la experiencia familiar.
+- `Supporting proof:` 4 habitaciones, 3 baños, 2,109 sq ft, 1 nivel, pool, clubhouse, fitness center, playground, dog park.
 - `Visual location to film:` amenidades reales de la comunidad.
 - `What not to say:` no venderlo como estilo resort ni prometer que todas las amenidades están disponibles sin validarlo en sitio.
 
 ## Soft Qualifiers
 
-1. `Si estás alrededor de 620 de crédito o más, tienes ingresos estables comprobables y cuentas con aproximadamente $20,600 para el down payment inicial, esta opción ya vale la pena revisarla con números actualizados.`
-2. `Si tu score anda cerca de 620 o más, tienes ingresos estables y ya contemplas unos $20,600 para empezar el proceso, esta puede ser una conversación realista.`
-3. `Si ya estás en un perfil de 620+ de crédito, con ingresos comprobables y cerca de $20,600 para el down payment, esta podría ser una alternativa seria para explorar.`
-4. `Si tienes crédito cercano a 620 o más, ingresos estables y un estimado de $20,600 para entrada inicial, ya puedes mirar esta opción con expectativa más aterrizada.`
-5. `Si ya contemplas aproximadamente $20,600 para el down payment, tienes ingresos estables y tu crédito está cerca de 620+, esta es de las opciones que conviene revisar con precio confirmado.`
+1. `Si estás cerca de 620 de crédito, esta ya vale la pena revisarla.`
+2. `Si tu crédito anda en 620+, esta ya es conversación seria.`
+3. `Si tienes ingresos estables comprobables, esta puede hacer sentido.`
+4. `Si tus ingresos son consistentes, aquí sí vale sacar números.`
+5. `Si ya contemplas cerca de $20,600 para entrada inicial, esta es una opción realista.`
+6. `Si ya tienes dinero pensado para empezar, esta merece detalle.`
+7. `Si ya estás listo para dar el primer paso, esta vale tour.`
+8. `Si buscas comprar pronto y no solo mirar, esta entra en la lista.`
 
 > El estimado de `$20,600` sale de tomar como referencia `5%` del precio investigado de `$412,490`. Es una cifra inicial, aproximada y dependiente del lender, del precio vigente y del perfil del comprador.
 >
-> Usar estos qualifiers como variaciones. No meterlos todos en la misma pieza. La recomendación es grabar varios, pero en cada anuncio armado usar `1` qualifier, o máximo `2` si quieres filtrar más fuerte.
+> Grabarlos como clips de una sola idea, idealmente de `3-5 segundos` cada uno.
+>
+> Usar estos qualifiers como variaciones. No meterlos todos en la misma pieza.
+>
+> La combinación más limpia suele ser:
+> `1 de crédito` + `1 de ingresos` o `1 de entrada`.
+>
+> La recomendación es usar `1` por anuncio, o máximo `2` si quieres filtrar más fuerte.
 
 ## CTAs
 
-1. `Haz clic aquí y escríbeme por WhatsApp "SUITE" para pasarte precio actualizado, disponibilidad real y tour.`
-2. `Escríbeme por WhatsApp "SUITE" y te comparto el precio, el tour y la disponibilidad del momento.`
-3. `Haz clic aquí y escríbeme por WhatsApp "SUITE" para decirte si esta opción sigue disponible y qué números deberías revisar primero.`
-4. `Escríbeme por WhatsApp "SUITE" y te paso la información actualizada para ver si hace sentido para ti.`
-5. `Haz clic aquí y escríbeme por WhatsApp "SUITE" para compartirte precio vigente, disponibilidad y siguiente paso.`
+1. `Haz clic aquí y escríbeme por WhatsApp para pasarte precio actualizado, disponibilidad real y tour.`
+2. `Escríbeme por WhatsApp y te comparto el precio, el tour y la disponibilidad del momento.`
+3. `Haz clic aquí y escríbeme por WhatsApp para decirte si esta opción sigue disponible y qué números deberías revisar primero.`
+4. `Escríbeme por WhatsApp y te paso la información actualizada para ver si hace sentido para ti.`
+5. `Haz clic aquí y escríbeme por WhatsApp para compartirte precio vigente, disponibilidad y siguiente paso.`
 
 ## Plan de Grabación Modular
 
 - `Bloque 1 - Hooks:` grabar todos los hooks seguidos, con mismo encuadre principal y una segunda toma de seguridad.
 - `Bloque 2 - Angles:` grabar todos los ángulos por separado, conectando cada uno con la prueba visual correspondiente.
-- `Bloque 3 - Soft qualifiers:` grabar 3-5 filtros suaves de precalificación como piezas cortas e independientes.
+- `Bloque 3 - Soft qualifiers:` grabar 5-8 filtros suaves, cada uno como línea corta e independiente.
 - `Bloque 4 - CTAs:` grabar todos los cierres en una sola tanda para mantener consistencia verbal y visual.
 - `Bloque 5 - Proof shots:` capturar la evidencia visual que permitirá unir hook + angle + qualifier + CTA sin que el mensaje pierda soporte.
 
