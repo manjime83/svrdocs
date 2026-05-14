@@ -55,6 +55,11 @@ nav:
           - Personalidad y Estilo: bots/laura/personality.md
           - Objetivo y Flujo: bots/laura/objetivo-y-flujo.md
           - Reglas Operativas: bots/laura/reglas-y-operacion.md
+      - Laura Internacional:
+          - Resumen: bots/laura-internacional/index.md
+          - Objetivo y Flujo: bots/laura-internacional/goal.md
+          - Personalidad y Estilo: bots/laura-internacional/personality.md
+          - Informacion Adicional: bots/laura-internacional/additional-information.md
   - Estrategias de Marketing:
       - Vista General: marketing.md
       - Sistema Modular de Ads para Propiedades: marketing/sistema-modular-de-ads.md
