@@ -32,3 +32,4 @@
 - [Guía de Inicio](docs/onboarding.md)
 - [Pipelines de Venta](docs/pipelines-de-venta.md)
 - [Procesos de Venta](docs/ventas.md)
+- [Primer filtro de compradores interesados](docs/ventas/primer-filtro-compradores-interesados.md)

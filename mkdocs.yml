@@ -70,4 +70,6 @@ nav:
           - Ranches at Lake McLeod - Aspire: marketing/propiedades/ranches-at-lake-mcleod-aspire.md
   - Guía de Inicio: onboarding.md
   - Pipelines de Venta: pipelines-de-venta.md
-  - Procesos de Venta: ventas.md
+  - Procesos de Venta:
+      - Vista General: ventas.md
+      - Primer filtro de compradores interesados: ventas/primer-filtro-compradores-interesados.md
