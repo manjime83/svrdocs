@@ -4,58 +4,62 @@ Usa este flujo como guía breve para presentar el broker y llevar la conversaci�
 
 ## Flujo rápido de la llamada
 
-1. **Abrir la conversación**
+### 1. Abrir la conversación
 
-   > Gracias por tomar la llamada. Antes de explicarte el broker, quiero entender dónde estás ahora: ¿ya tienes la licencia activa, estás esperando aprobación del DBPR o vienes de otro broker?
+> Gracias por tomar la llamada. Antes de explicarte el broker, quiero entender dónde estás ahora: ¿ya tienes la licencia activa, estás esperando aprobación del DBPR o vienes de otro broker?
 
-2. **Presentar el broker**
+### 2. Presentar el broker
 
-   > El broker se llama **My Realty Group**. Llevan años en Florida, con presencia en Miami, Tampa, West Palm Beach y Orlando. Operan **100% en español**: contratos, soporte, dudas y comunicación interna.
+> El broker se llama **My Realty Group**. Llevan años en Florida, con presencia en Miami, Tampa, West Palm Beach y Orlando. Operan **100% en español**: contratos, soporte, dudas y comunicación interna.
 
-   > El broker es **John Diaz**, con más de 25 años de experiencia en el mercado de Florida.
+> El broker es **John Diaz**, con más de 25 años de experiencia en el mercado de Florida.
 
-3. **Explicar comisiones y costos**
+### 3. Explicar comisiones y costos
 
-   > El modelo es simple: **el 100% de tu comisión es tuya**. El broker no se queda con parte de lo que cierras.
+> El modelo es simple: **el 100% de tu comisión es tuya**. El broker no se queda con parte de lo que cierras.
 
-   Costos:
+Costos:
 
-   - **$599 al año**, descontado automáticamente del primer cierre del año.
-   - **$695 por cada transacción** cerrada.
-   - **Sin cuota mensual**.
+- **$599 al año**, descontado automáticamente del primer cierre del año.
+- **$695 por cada transacción** cerrada.
+- **Sin cuota mensual**.
 
-   > Ese fee de $695 muchos agentes lo negocian dentro del cierre como gasto de archivo.
+> Si no vendes nada en el año, no te cobran nada. Esperemos que eso no pase, pero es importante que lo sepas.
 
-4. **Aclarar mentoría si no tiene cierres**
+> Ese fee de $695 muchos agentes lo negocian dentro del cierre como gasto de archivo.
 
-   > Como todavía no tienes transacciones cerradas, los primeros 3 cierres van con acompañamiento de un mentor.
+### 4. Aclarar mentoría si no tiene cierres
 
-   Split de esos cierres:
+> Como todavía no tienes transacciones cerradas, los primeros 3 cierres van con acompañamiento de un mentor.
 
-   - **70%** para el agente.
-   - **20%** para el mentor.
-   - **10%** para el broker.
+Split de esos cierres:
 
-   > El mentor asignado en nuestro equipo sería **Sandra Vargas**, que es mi esposa y también agente en My Realty. Te lo digo de frente para que lo sepas desde el principio. Ella trabaja exactamente el mismo mercado de Osceola que tú vas a trabajar.
+- **70%** para el agente.
+- **20%** para el mentor.
+- **10%** para el broker.
 
-   > Después de esos 3 cierres, ya es **100% tuyo**. Y si en algún momento necesitas otro mentor, el programa lo permite sin costo adicional.
+> El mentor asignado en nuestro equipo sería **Sandra Vargas**, que es mi esposa y también agente en My Realty. Ella trabaja exactamente el mismo mercado de Osceola que tú vas a trabajar.
 
-5. **Mencionar entrenamiento y comunidad**
+> Después de esos 3 cierres, ya es **100% tuyo**. Si después de cerrar esas 3 transacciones sigues requiriendo mentoría, que esperemos que no, puedes seguir usando el programa.
 
-   > Tienes acceso a clases y cursos para agentes del broker, con temas como short sales, visas, liderazgo, pre-construcción y otros recursos que van cambiando según el mercado.
+> También vas a tener disponible todo el equipo actual de Sandra, que cuenta con lenders, coordinadores de transacción, inspectores, contactos in-house y otros recursos que ayudan durante el proceso.
 
-   > También entras a la comunidad del broker: deals para promocionar, networking con otros agentes y respaldo de un equipo que opera en español.
+### 5. Mencionar entrenamiento y comunidad
 
-6. **Mencionar tecnología disponible**
+> Tienes acceso a clases y cursos para agentes del broker, con temas como short sales, visas, liderazgo, mindset, pre-construcción y otros recursos que van cambiando según el mercado.
 
-   > Al activarte puedes solicitar acceso a herramientas sin costo adicional:
+> También entras a la comunidad del broker: deals para promocionar, networking con otros agentes y respaldo de un equipo que opera en español.
 
-   - **BoldTrail**: CRM para contactos y seguimiento.
-   - **My Design**: herramienta de marketing.
-   - **Página IDX propia**: sitio web con búsqueda de propiedades.
+### 6. Mencionar tecnología disponible
 
-7. **Cerrar con el siguiente paso**
+> Al activarte puedes solicitar acceso a herramientas sin costo adicional:
 
-   > El primer paso es verificar que tu licencia esté activa en el portal del **DBPR**. Eso toma unos 5 minutos desde el celular.
+- **BoldTrail**: CRM para contactos y seguimiento.
+- **My Design**: herramienta de marketing.
+- **Página IDX propia**: sitio web con búsqueda de propiedades.
 
-   > Si está en orden, el proceso es sencillo: firmas el contrato de afiliación y My Realty transfiere tu licencia al broker directamente con el DBPR.
+## Siguiente paso
+
+> El primer paso es verificar que tu licencia esté activa en el portal del **DBPR**. Eso toma unos 5 minutos desde el celular.
+
+> Si está en orden, el proceso es sencillo: firmas el contrato de afiliación y My Realty transfiere tu licencia al broker directamente con el DBPR.
