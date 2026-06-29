@@ -29,6 +29,7 @@
 - [Crosswinds - Estate Key Collection - Freedom](docs/marketing/propiedades/crosswinds-estate-key-collection-freedom.md)
 - [Marion Creek - Elm - 743 Hazelwood Court](docs/marketing/propiedades/marion-creek-elm-743-hazelwood-court.md)
 - [Ranches at Lake McLeod - Aspire](docs/marketing/propiedades/ranches-at-lake-mcleod-aspire.md)
+- [Presentación del Broker y Reclutamiento de Agentes](docs/reclutamiento/presentacion-broker.md)
 - [Guía de Inicio](docs/onboarding.md)
 - [Pipelines de Venta](docs/pipelines-de-venta.md)
 - [Procesos de Venta](docs/ventas.md)
