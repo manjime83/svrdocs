@@ -8,6 +8,8 @@ Usa este flujo como guía breve para presentar el broker y llevar la conversaci�
 
 > Gracias por tomar la llamada. Antes de explicarte el broker, quiero entender dónde estás ahora: ¿ya tienes la licencia activa, estás esperando aprobación del DBPR o vienes de otro broker?
 
+> ¿Ya has cerrado alguna transacción antes?
+
 ### 2. Presentar el broker
 
 > El broker se llama **My Realty Group**. Llevan años en Florida, con presencia en Miami, Tampa, West Palm Beach y Orlando. Operan **100% en español**: contratos, soporte, dudas y comunicación interna.
@@ -16,7 +18,7 @@ Usa este flujo como guía breve para presentar el broker y llevar la conversaci�
 
 ### 3. Explicar comisiones y costos
 
-> El modelo es simple: **el 100% de tu comisión es tuya**. El broker no se queda con parte de lo que cierras.
+> El modelo es simple: después del programa de mentoría, **el 100% de tu comisión es tuya**. El broker no se queda con parte de lo que cierras.
 
 Costos:
 
@@ -26,7 +28,7 @@ Costos:
 
 > Si no vendes nada en el año, no te cobran nada. Esperemos que eso no pase, pero es importante que lo sepas.
 
-> Ese fee de $695 muchos agentes lo negocian dentro del cierre como gasto de archivo.
+> Ese fee de $695 se puede explicar y manejar dentro del **buyer agreement**, para que el comprador entienda desde el inicio cómo se cubre ese costo en la transacción.
 
 ### 4. Aclarar mentoría si no tiene cierres
 
@@ -40,7 +42,7 @@ Split de esos cierres:
 
 > El mentor asignado en nuestro equipo sería **Sandra Vargas**, que es mi esposa y también agente en My Realty. Ella trabaja exactamente el mismo mercado de Osceola que tú vas a trabajar.
 
-> Después de esos 3 cierres, ya es **100% tuyo**. Si después de cerrar esas 3 transacciones sigues requiriendo mentoría, que esperemos que no, puedes seguir usando el programa.
+> Después de esos 3 cierres, ya es **100% tuyo**. Si después de esos 3 cierres todavía necesitas refuerzo, puedes seguir usando el programa.
 
 > También vas a tener disponible todo el equipo actual de Sandra, que cuenta con lenders, coordinadores de transacción, inspectores, contactos in-house y otros recursos que ayudan durante el proceso.
 
@@ -58,8 +60,14 @@ Split de esos cierres:
 - **My Design**: herramienta de marketing.
 - **Página IDX propia**: sitio web con búsqueda de propiedades.
 
-## Siguiente paso
+## 7. Siguiente paso
 
 > El primer paso es verificar que tu licencia esté activa en el portal del **DBPR**. Eso toma unos 5 minutos desde el celular.
 
-> Si está en orden, el proceso es sencillo: firmas el contrato de afiliación y My Realty transfiere tu licencia al broker directamente con el DBPR.
+> Si está en orden, el proceso es sencillo: primero llenas el formulario de inscripción y luego My Realty transfiere tu licencia al broker directamente con el DBPR.
+
+Para inscribirte e iniciar el proceso, usa este enlace:
+
+[https://manueljimenezfl.teammyrealty.com/enroll](https://manueljimenezfl.teammyrealty.com/enroll)
+
+Al día siguiente, el equipo de onboarding del broker debe contactarte para iniciar el proceso, coordinar la firma del contrato y guiarte por el onboarding del broker. En ese paso también te explican quién es quién dentro del equipo y a quién acudir según cada necesidad.
