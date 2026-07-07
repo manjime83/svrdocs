@@ -72,7 +72,9 @@ nav:
           - Ranches at Lake McLeod - Aspire: marketing/propiedades/ranches-at-lake-mcleod-aspire.md
   - Reclutamiento de Agentes:
       - Presentación del Broker: reclutamiento/presentacion-broker.md
-  - Guía de Inicio: onboarding.md
+  - Guía de Inicio:
+      - Vista General: onboarding.md
+      - Los Primeros 90 Días: primeros-90-dias.md
   - Pipelines de Venta: pipelines-de-venta.md
   - Procesos de Venta:
       - Vista General: ventas.md
