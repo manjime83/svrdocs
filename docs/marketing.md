@@ -71,7 +71,7 @@ Los límites exactos de Meta (peso máximo, duración máxima por ubicación) ca
 
 ### Referencia visual de zonas seguras
 
-![Referencia visual de zonas seguras para Facebook Ads](assets/facebook-ads-safe-zones.svg)
+![Referencia visual de zonas seguras para Facebook Ads](../.gitbook/assets/facebook-ads-safe-zones.svg)
 
 * Usar la imagen anterior como referencia rápida para ubicar texto, subtítulos y CTA dentro de un área segura.
 * La validación final debe hacerse siempre en Ads Manager, porque la interfaz puede variar según placement.
@@ -163,7 +163,7 @@ El seguimiento comercial y la gestión de oportunidades se realiza a través de 
 
 ### Diagrama de Flujo Estándar
 
-![Pipeline de Ventas](assets/sales-pipeline.svg)
+![Pipeline de Ventas](../.gitbook/assets/sales-pipeline.svg)
 
 ### Etapas Principales
 
