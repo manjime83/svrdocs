@@ -28,6 +28,8 @@ markdown_extensions:
   - footnotes
   - md_in_html
   - tables
+  - pymdownx.tasklist:
+      custom_checkbox: true
   - toc:
       permalink: true
 
