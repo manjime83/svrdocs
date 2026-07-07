@@ -55,7 +55,7 @@ Este pipeline separa dos cosas que no deben mezclarse:
 
 ### Referencia Visual
 
-![Pipeline de Ventas](../.gitbook/assets/sales-pipeline.svg)
+![Pipeline de Ventas](assets/sales-pipeline.svg)
 
 #### 1. Oportunidad Nueva
 
