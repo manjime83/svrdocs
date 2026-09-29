@@ -4,6 +4,9 @@ Esta guía ayuda a hacer el primer diagnóstico cuando una persona o familia mue
 
 Casas hay muchas. Lo importante al inicio es identificar si el comprador puede calificar, en qué rango de pago mensual se siente cómodo y qué tipo de propiedad se ajusta a su realidad financiera.
 
+!!! tip "Formato para la llamada"
+    Descarga la [hoja de una página](formato-llamada-comprador.md) para llenar estos datos durante la llamada.
+
 !!! warning "Importante"
     Este filtro no es una aprobación ni reemplaza la revisión del lender. El agente solo recopila información, orienta al cliente y decide si el caso está listo para precalificación.
 

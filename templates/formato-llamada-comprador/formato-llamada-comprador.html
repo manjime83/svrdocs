@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<title>Hoja de llamada — Primer filtro de comprador</title>
+<style>
+  @font-face { font-family:"Outfit"; font-weight:500; src:url(fonts/Outfit-500.ttf); }
+  @font-face { font-family:"Outfit"; font-weight:600; src:url(fonts/Outfit-600.ttf); }
+  @font-face { font-family:"Outfit"; font-weight:700; src:url(fonts/Outfit-700.ttf); }
+  @font-face { font-family:"DM Sans"; font-weight:400; src:url(fonts/DMSans-400.ttf); }
+  @font-face { font-family:"DM Sans"; font-weight:500; src:url(fonts/DMSans-500.ttf); }
+  @font-face { font-family:"DM Sans"; font-weight:700; src:url(fonts/DMSans-700.ttf); }
+
+  @page { size: Letter; margin: 0.4in 0.42in; }
+  :root { --ink:#000; --soft:#555; --hair:#8a8a8a; --fill:#f2f2f2; }
+  * { box-sizing:border-box; }
+  html,body { margin:0; padding:0; }
+  body { font-family:"DM Sans","Helvetica Neue",Arial,sans-serif; font-weight:400; font-size:8.8pt; line-height:1.4; color:var(--ink); font-variant-numeric:tabular-nums; -webkit-print-color-adjust:exact; print-color-adjust:exact; }
+
+  .mast { border-bottom:2.5px solid var(--ink); padding:2px 2px 8px; display:flex; justify-content:space-between; align-items:flex-end; }
+  .eyebrow { font-weight:500; font-size:7pt; letter-spacing:.14em; text-transform:uppercase; color:var(--soft); margin-bottom:2px; }
+  h1 { font-family:"Outfit",sans-serif; font-weight:600; font-size:19pt; line-height:1.05; letter-spacing:-.01em; margin:0; }
+  .meta { display:grid; grid-template-columns:auto auto; gap:3px 14px; font-size:7.6pt; }
+  .meta i { font-style:normal; color:var(--soft); }
+  .meta b { font-weight:500; display:inline-block; min-width:70px; border-bottom:1px solid var(--hair); height:11px; vertical-align:bottom; }
+  .quote { font-family:"Outfit",sans-serif; font-weight:500; font-size:9.2pt; text-align:center; margin:6px 0 7px; }
+
+  .grid { display:grid; grid-template-columns:1fr 1fr; gap:8px; }
+  .card { border:1px solid var(--ink); border-radius:12px; padding:6px 11px 5px; break-inside:avoid; }
+  .full { grid-column:1 / -1; }
+  h2 { font-family:"Outfit",sans-serif; font-weight:600; font-size:8pt; letter-spacing:.12em; text-transform:uppercase; margin:0 0 3px; display:flex; align-items:center; gap:6px; }
+  h2 .n { border:1.2px solid var(--ink); border-radius:60px; min-width:15px; height:15px; padding:0 5px; display:inline-flex; align-items:center; justify-content:center; font-size:7.4pt; letter-spacing:0; }
+  h2 small { font-family:"DM Sans",sans-serif; font-weight:400; font-size:7.4pt; letter-spacing:0; text-transform:none; color:var(--soft); }
+
+  .row { display:flex; align-items:flex-end; flex-wrap:wrap; gap:5px 7px; margin:5px 0; }
+  .row label { color:var(--soft); font-size:7.8pt; flex:none; }
+  .ln { flex:1; border-bottom:1px solid var(--hair); height:13px; min-width:14px; }
+  .o { white-space:nowrap; display:inline-flex; align-items:center; gap:3px; }
+  .cb { width:9px; height:9px; border:1.1px solid var(--ink); border-radius:2.5px; display:inline-block; }
+  .note { color:var(--soft); font-size:7pt; margin-top:3px; }
+
+  table { width:100%; border-collapse:separate; border-spacing:0; margin-top:3px; border:1px solid var(--ink); border-radius:8px; overflow:hidden; }
+  td,th { padding:3px 6px; height:21px; text-align:left; font-weight:400; border-bottom:1px solid var(--hair); border-right:1px solid var(--hair); }
+  tr > :last-child { border-right:0; }
+  tr:last-child > * { border-bottom:0; }
+  th { background:var(--fill); font-family:"Outfit",sans-serif; font-weight:600; font-size:7.6pt; letter-spacing:.06em; text-transform:uppercase; }
+  td.l { color:var(--soft); font-size:7.8pt; width:34%; }
+  .debts td.l { width:62%; }
+  tr.tot > * { background:var(--fill); font-weight:700; }
+
+  .calc { border:1.5px solid var(--ink); border-radius:12px; padding:8px 14px; display:flex; align-items:center; gap:16px; }
+  .calc .f { font-family:"Outfit",sans-serif; font-weight:500; font-size:9.4pt; flex:none; }
+  .calc .eq { display:flex; align-items:flex-end; gap:6px; flex:1; font-weight:500; }
+  .calc .eq .ln { border-bottom:1px solid var(--ink); min-width:44px; flex:none; width:58px; }
+  .calc .eq b { font-family:"Outfit",sans-serif; font-weight:700; }
+  .calc .eq .res { width:70px; }
+  .calc .w { font-size:6.8pt; color:var(--soft); flex:none; max-width:120px; line-height:1.35; }
+
+  .crm { }
+  footer { margin-top:5px; display:flex; justify-content:space-between; font-size:6.6pt; color:var(--soft); }
+</style>
+</head>
+<body>
+
+<div class="mast">
+  <div>
+    <div class="eyebrow">Ventas · Primer filtro</div>
+    <h1>Hoja de llamada — comprador</h1>
+  </div>
+  <div class="meta">
+    <span><i>Fecha</i> <b></b></span><span><i>Hora</i> <b></b></span>
+    <span><i>Fuente</i> <b></b></span><span><i>Duración</i> <b></b></span>
+  </div>
+</div>
+
+<div class="quote">“No buscamos casas primero. Primero identificamos si el cliente puede calificar.”</div>
+
+<div class="grid">
+
+  <section class="card">
+    <h2><span class="n">1</span>Datos personales</h2>
+    <div class="row"><label>Nombre</label><span class="ln"></span></div>
+    <div class="row"><label>Tel</label><span class="ln"></span><label>Email</label><span class="ln"></span></div>
+    <div class="row"><label>Idioma</label><span class="o"><span class="cb"></span>ES</span><span class="o"><span class="cb"></span>EN</span><label style="margin-left:6px">Llamada</label><span class="o"><span class="cb"></span>Entrante</span><span class="o"><span class="cb"></span>Saliente</span></div>
+    <div class="row"><label>¿Otro agente?</label><span class="o"><span class="cb"></span>No</span><span class="o"><span class="cb"></span>Sí:</span><span class="ln"></span></div>
+    <div class="row"><label>Notas</label><span class="ln"></span></div>
+    <div class="row"><span class="ln"></span></div>
+  </section>
+
+  <section class="card">
+    <h2><span class="n">2</span>Qué busca <small>escuchar primero</small></h2>
+    <div class="row"><label>Necesidad</label><span class="ln"></span></div>
+    <div class="row"><label>Propósito</label><span class="o"><span class="cb"></span>Vivienda</span><span class="o"><span class="cb"></span>Inversión</span><label>Zona</label><span class="ln"></span></div>
+    <div class="row"><label>Tipo</label><span class="o"><span class="cb"></span>Nueva</span><span class="o"><span class="cb"></span>Usada</span><span class="o"><span class="cb"></span>Townhome</span><span class="o"><span class="cb"></span>Condo</span></div>
+    <div class="row"><label>Hab</label><span class="ln" style="max-width:34px"></span><label>Baños</label><span class="ln" style="max-width:34px"></span><label>Presupuesto $</label><span class="ln"></span></div>
+    <div class="row"><label>Cuándo</label><span class="o"><span class="cb"></span>0–3 m</span><span class="o"><span class="cb"></span>3–6 m</span><span class="o"><span class="cb"></span>6–12 m</span><span class="o"><span class="cb"></span>+12 m</span></div>
+    <div class="row"><label>Hoy</label><span class="o"><span class="cb"></span>Renta</span><label>vence</label><span class="ln" style="max-width:50px"></span><span class="o"><span class="cb"></span>Dueño</span></div>
+    <div class="note"><span class="o"><span class="cb"></span>Expliqué por qué la calificación va antes de ver casas</span></div>
+  </section>
+
+  <section class="card">
+    <h2><span class="n">3</span>Ingresos <small>por persona que aplicaría</small></h2>
+    <table>
+      <tr><th style="width:30%"></th><th>Aplicante 1</th><th>Aplicante 2</th></tr>
+      <tr><td class="l">Nombre / relación</td><td></td><td></td></tr>
+      <tr><td class="l">Tipo</td>
+        <td><span class="o"><span class="cb"></span>W-2</span> <span class="o"><span class="cb"></span>1099</span><br><span class="o"><span class="cb"></span>Negocio propio</span></td>
+        <td><span class="o"><span class="cb"></span>W-2</span> <span class="o"><span class="cb"></span>1099</span><br><span class="o"><span class="cb"></span>Negocio propio</span></td></tr>
+      <tr><td class="l">Tiempo en la actividad</td><td></td><td></td></tr>
+      <tr><td class="l">Ingreso mensual $</td><td></td><td></td></tr>
+      <tr class="tot"><td>Total / mes</td><td colspan="2">$</td></tr>
+    </table>
+  </section>
+
+  <section class="card">
+    <h2><span class="n">4</span>Deudas mensuales</h2>
+    <table class="debts">
+      <tr><td class="l">Carros</td><td>$</td></tr>
+      <tr><td class="l">Préstamos personales</td><td>$</td></tr>
+      <tr><td class="l">Estudiantiles</td><td>$</td></tr>
+      <tr><td class="l">Tarjetas (pago mínimo)</td><td>$</td></tr>
+      <tr><td class="l">Otros financiamientos</td><td>$</td></tr>
+      <tr class="tot"><td>Total / mes</td><td>$</td></tr>
+    </table>
+  </section>
+
+  <section class="card">
+    <h2><span class="n">5</span>Dinero disponible</h2>
+    <div class="row"><label>Inicial $</label><span class="ln"></span><label>Cierre $</label><span class="ln"></span></div>
+    <div class="row"><label>Fuente</label><span class="o"><span class="cb"></span>Ahorros</span><span class="o"><span class="cb"></span>Regalo</span><span class="o"><span class="cb"></span>Venta</span><span class="o"><span class="cb"></span>Otro</span></div>
+    <div class="row"><label>Estatus</label><span class="o"><span class="cb"></span>Ciudadano</span><span class="o"><span class="cb"></span>Residente</span><span class="o"><span class="cb"></span>Otro:</span><span class="ln"></span></div>
+  </section>
+
+  <section class="card">
+    <h2><span class="n">6</span>Crédito</h2>
+    <div class="row"><label>Score aprox.</label><span class="ln"></span></div>
+    <div class="row"><label>Atrasos</label><span class="o"><span class="cb"></span>No</span><span class="o"><span class="cb"></span>Sí</span><label style="margin-left:6px">Colecciones</label><span class="o"><span class="cb"></span>No</span><span class="o"><span class="cb"></span>Sí</span></div>
+    <div class="row"><label>Tarjetas cargadas</label><span class="o"><span class="cb"></span>No</span><span class="o"><span class="cb"></span>Sí</span><label>Detalle</label><span class="ln"></span></div>
+  </section>
+
+  <section class="card full">
+    <h2><span class="n">7</span>Capacidad aproximada <small>referencial, no definitiva: solo el lender aprueba</small></h2>
+    <div class="calc">
+      <div class="f">(Ingresos ÷ 2) − Deudas = Capacidad</div>
+      <div class="eq">( $<span class="ln"></span> ÷ 2 ) − $<span class="ln"></span> = <b>$</b><span class="ln res"></span><b>/ mes</b></div>
+      <div class="w">Estimar un rango conservador.</div>
+    </div>
+    <div class="note">Referencias (varían por lender): ciudadano/residente desde ~3 % de inicial (convencional) o ~3.5 % (FHA); internacional, inicial mayor · score ~620 como referencia en casa nueva · casa nueva: posibles incentivos de cierre; usada: menos incentivos, más gastos de cierre.</div>
+  </section>
+
+  <section class="card">
+    <h2><span class="n">8</span>Alinear expectativas</h2>
+    <div class="row"><span class="o"><span class="cb"></span>Zona y presupuesto encajan</span><span class="o"><span class="cb"></span>Ajustar zona</span></div>
+    <div class="row"><span class="o"><span class="cb"></span>Ajustar presupuesto</span><span class="o"><span class="cb"></span>Mejorar crédito / ahorros</span></div>
+    <div class="row"><label>Objeciones</label><span class="ln"></span></div>
+    <div class="row"><span class="ln"></span></div>
+  </section>
+
+  <section class="card">
+    <h2><span class="n">9</span>Resultado y próximo paso</h2>
+    <div class="row"><label>¿Precalificación?</label><span class="o"><span class="cb"></span>Sí</span><span class="o"><span class="cb"></span>Ahora no</span><span class="o"><span class="cb"></span>Falta info</span></div>
+    <div class="row"><label>Lead</label><span class="o"><span class="cb"></span>Caliente</span><span class="o"><span class="cb"></span>Tibio</span><span class="o"><span class="cb"></span>Frío</span><label>Lender</label><span class="ln"></span></div>
+    <div class="row"><label>Próximo paso</label><span class="ln"></span></div>
+    <div class="row"><label>Seguimiento</label><span class="ln" style="max-width:80px"></span><label>Responsable</label><span class="ln"></span></div>
+  </section>
+
+  <section class="card full crm">
+    <h2><span class="n">CRM</span>Resumen <small>registro mínimo, para copiar y pegar</small></h2>
+    <div class="row"><label>Datos</label><span class="ln"></span></div>
+    <div class="row"><label>Ubicación · propiedad · propósito</label><span class="ln"></span></div>
+    <div class="row"><label>Ingreso · deudas · disponible · score · estatus</label><span class="ln"></span></div>
+    <div class="row"><label>Capacidad · precalificación · próximo paso</label><span class="ln"></span></div>
+  </section>
+
+</div>
+
+<footer><span>Basado en: docs.sandravargasfl.com › Ventas › Primer filtro de compradores interesados</span><span>Cifras de referencia, no aprobaciones de crédito.</span></footer>
+</body>
+</html>

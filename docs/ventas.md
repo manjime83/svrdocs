@@ -7,6 +7,7 @@ Los pipelines comerciales de nueva construcción ahora están documentados en `d
 ## Procesos relacionados
 
 - [Primer filtro de compradores interesados](ventas/primer-filtro-compradores-interesados.md): guía para evaluar si un comprador está listo para precalificación antes de invertir tiempo buscando propiedades.
+- [Formato de llamada (PDF)](ventas/formato-llamada-comprador.md): hoja imprimible de una página para llenar durante la llamada con el comprador.
 
 ## Proceso Post-Contrato: Guía Detallada
 

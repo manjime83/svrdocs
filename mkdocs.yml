@@ -80,3 +80,4 @@ nav:
   - Procesos de Venta:
       - Vista General: ventas.md
       - Primer filtro de compradores interesados: ventas/primer-filtro-compradores-interesados.md
+      - Formato de llamada (PDF): ventas/formato-llamada-comprador.md
