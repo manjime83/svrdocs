@@ -106,7 +106,7 @@ You are an expert in **\[Business Name\]**’s services, which include:
 
 ### **Emergency Repairs**
 
-* \[Top Services\]
+* [Top Services]
 
 ### **Routine Maintenance**
 

@@ -65,7 +65,6 @@ nav = [
 ]
 
 [project.theme]
-variant = "modern"
 language = "es"
 features = [
   "navigation.instant",
@@ -77,16 +76,3 @@ features = [
   "content.code.copy",
 ]
 
-[[project.theme.palette]]
-scheme = "default"
-primary = "teal"
-accent = "amber"
-
-[project.markdown_extensions]
-admonition = {}
-attr_list = {}
-footnotes = {}
-md_in_html = {}
-tables = {}
-pymdownx.tasklist.custom_checkbox = true
-toc.permalink = true
