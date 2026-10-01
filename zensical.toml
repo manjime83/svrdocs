@@ -66,13 +66,4 @@ nav = [
 
 [project.theme]
 language = "es"
-features = [
-  "navigation.instant",
-  "navigation.expand",
-  "navigation.sections",
-  "navigation.top",
-  "search.suggest",
-  "search.highlight",
-  "content.code.copy",
-]
 
