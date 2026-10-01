@@ -1,6 +1,6 @@
 # Sandra Vargas Realtor Docs
 
-This repository is now configured as an `MkDocs` site using the `Material for MkDocs` theme.
+This repository is a [Zensical](https://zensical.org) site. Configuration lives in `zensical.toml`.
 
 ## Local development
 
@@ -14,7 +14,7 @@ pip install -r requirements.txt
 3. Start the local docs server:
 
 ```bash
-mkdocs serve
+zensical serve
 ```
 
 The site will be available at `http://127.0.0.1:8000`.
@@ -22,7 +22,7 @@ The site will be available at `http://127.0.0.1:8000`.
 ## Build
 
 ```bash
-mkdocs build --strict
+zensical build --strict
 ```
 
 The generated site is written to `site/`.
