@@ -69,17 +69,23 @@ language = "es"
 
 [[project.theme.palette]]
 media = "(prefers-color-scheme)"
+primary = "teal"
+accent = "amber"
 toggle.icon = "lucide/sun-moon"
 toggle.name = "Cambiar a modo claro"
 
 [[project.theme.palette]]
 media = "(prefers-color-scheme: light)"
 scheme = "default"
+primary = "teal"
+accent = "amber"
 toggle.icon = "lucide/sun"
 toggle.name = "Cambiar a modo oscuro"
 
 [[project.theme.palette]]
 media = "(prefers-color-scheme: dark)"
 scheme = "slate"
+primary = "teal"
+accent = "amber"
 toggle.icon = "lucide/moon"
 toggle.name = "Usar preferencia del sistema"
