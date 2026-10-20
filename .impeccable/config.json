@@ -1,0 +1,17 @@
+{
+  "detector": {
+    "ignoreRules": [],
+    "ignoreFiles": [],
+    "ignoreValues": [
+      {
+        "rule": "tight-leading",
+        "value": "*",
+        "files": [
+          "templates/formato-llamada-comprador/formato-llamada-comprador.html"
+        ],
+        "createdAt": "2026-10-01T17:31:36.580Z",
+        "reason": "Claude triage: one-page print form; tight leading is only on the single-line h1 title (1.05) and the single-digit circle badges (line-height 1, cap-trimmed); body text stays at 1.4"
+      }
+    ]
+  }
+}
